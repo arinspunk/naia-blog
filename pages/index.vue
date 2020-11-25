@@ -1,0 +1,37 @@
+<template>
+  <main>
+    <h1>Home page</h1>
+    <p>
+      <NuxtLink to="/about">About</NuxtLink>
+    </p>
+    <p>
+      <a href="https://nuxtjs.org">External Link</a>
+    </p>
+    <ul>
+      <li v-for="article of articles" :key="article.slug">
+        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+          <div>
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.description }}</p>
+          </div>
+        </NuxtLink>
+      </li>
+    </ul>
+  </main>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const articles = await $content("articles", params.slug)
+      .only(["title", "description", "img", "slug"])
+      .sortBy("createdAt", "asc")
+      .fetch();
+
+    return {
+      articles
+    };
+  }
+};
+</script>
+

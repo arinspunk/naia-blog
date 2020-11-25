@@ -1,0 +1,13 @@
+{
+  "name": "naia-blog",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.11.0",
+    "nuxt": "^2.14.7"
+  }
+}
