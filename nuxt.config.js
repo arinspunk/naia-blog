@@ -1,5 +1,8 @@
 export default {
-    modules: ['@nuxt/content','nuxt-i18n'],
+    modules: [
+        '@nuxt/content',
+        'nuxt-i18n'
+    ],
     components: true,
     i18n: {
         locales: ['pt', 'en', 'es'],

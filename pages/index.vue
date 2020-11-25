@@ -1,12 +1,6 @@
 <template>
   <main>
     <h1>{{ $t('welcome') }}</h1>
-    <p>
-      <NuxtLink to="/about">About</NuxtLink>
-    </p>
-    <p>
-      <a href="https://nuxtjs.org">External Link</a>
-    </p>
     <ul>
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink :to="localePath({ name: 'blog-slug', params: { slug: article.slug } })">
@@ -28,7 +22,6 @@ export default {
       .sortBy("createdAt", "asc")
       .limit(2)
       .fetch();
-
     return {
       articles
     };
