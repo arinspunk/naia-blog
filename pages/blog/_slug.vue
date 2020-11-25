@@ -27,14 +27,14 @@ export default {
             return new Date(date).toLocaleDateString("en", options);
         }
     },
-    async asyncData({ $content, params }) {
-        const article = await $content("articles", params.slug).fetch();
+    async asyncData({ app, $content, params }) {
+        const article = await $content(`${app.i18n.locale}/articles`, params.slug).fetch();
         return { article };
     },
-    async asyncData({ $content, params }) {
-        const article = await $content('articles', params.slug).fetch()
+    async asyncData({ app, $content, params }) {
+        const article = await $content(`${app.i18n.locale}/articles`, params.slug).fetch()
 
-        const [prev, next] = await $content('articles')
+        const [prev, next] = await $content(`${app.i18n.locale}/articles`)
         .only(['title', 'slug'])
         .sortBy('createdAt', 'asc')
         .surround(params.slug)

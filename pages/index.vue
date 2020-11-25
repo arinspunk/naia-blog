@@ -9,7 +9,7 @@
     </p>
     <ul>
       <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+        <NuxtLink :to="localePath({ name: 'blog-slug', params: { slug: article.slug } })">
           <div>
             <h2>{{ article.title }}</h2>
             <p>{{ article.description }}</p>
@@ -22,8 +22,8 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const articles = await $content("articles", params.slug)
+  async asyncData({ app, $content, params }) {
+    const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
       .only(["title", "description", "img", "slug"])
       .sortBy("createdAt", "asc")
       .limit(2)

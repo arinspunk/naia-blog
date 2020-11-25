@@ -4,6 +4,7 @@ export default {
     i18n: {
         locales: ['pt', 'en', 'es'],
         defaultLocale: 'pt',
+        noPrefixDefaultLocale: true,
         vueI18n: {
             fallbackLocale: 'pt',
             messages: {
