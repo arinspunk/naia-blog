@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>{{ $t('welcome') }}</h1>
+    <h1>Blog</h1>
     <p>
       <NuxtLink to="/about">About</NuxtLink>
     </p>
@@ -26,7 +26,6 @@ export default {
     const articles = await $content("articles", params.slug)
       .only(["title", "description", "img", "slug"])
       .sortBy("createdAt", "asc")
-      .limit(2)
       .fetch();
 
     return {
