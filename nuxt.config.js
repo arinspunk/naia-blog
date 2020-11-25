@@ -13,12 +13,15 @@ export default {
             messages: {
                 pt: {
                     welcome: 'Bem-vinda',
+                    verTodos: 'Ver todos'
                 },
                 en: {
-                    welcome: 'Welcome'
+                    welcome: 'Welcome',
+                    verTodos: 'See all'
                 },
                 es: {
-                    welcome: 'Bienvenido'
+                    welcome: 'Bienvenido',
+                    verTodos: 'Ver todos'
                 }
             }
         }

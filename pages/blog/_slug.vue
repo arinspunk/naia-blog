@@ -3,13 +3,6 @@
     <h1>{{ article.title }}</h1>
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
     <p>{{ article.description }}</p>
-    <nav>
-      <ul>
-        <li v-for="link of article.toc" :key="link.id" :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }">
-          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-        </li>
-      </ul>
-    </nav>
     <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" />
     <nuxt-content :document="article" />
     <div class="bg-blue-500 text-white p-4 mb-4">

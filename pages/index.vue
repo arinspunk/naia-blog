@@ -11,6 +11,11 @@
         </NuxtLink>
       </li>
     </ul>
+    <p>
+      <NuxtLink :to="localePath('/blog')">
+        {{$t('verTodos')}}
+      </NuxtLink>
+    </p>
   </main>
 </template>
 
