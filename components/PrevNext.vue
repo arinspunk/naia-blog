@@ -1,21 +1,19 @@
 <template>
-  <div class="flex justify-between">
+  <div class="next-prev container">
     <NuxtLink
       v-if="prev"
       :to="localePath({ name: 'blog-slug', params: { slug: prev.slug } })"
-      class="text-primary font-bold hover:underline"
+      class="next-prev__prev"
     >
       {{ prev.title }}
     </NuxtLink>
-    <span v-else>&nbsp;</span>
     <NuxtLink
       v-if="next"
       :to="localePath({ name: 'blog-slug', params: { slug: next.slug } })"
-      class="font-bold hover:underline"
+      class="next-prev__next"
     >
       {{ next.title }}
     </NuxtLink>
-    <span v-else>&nbsp;</span>
   </div>
 </template>
 
@@ -30,6 +28,17 @@
         type: Object,
         default: () => null
       }
-    },
+    }
   }
 </script>
+
+<style lang="css">
+  .next-prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+     justify-content: space-between;
+  }
+</style>

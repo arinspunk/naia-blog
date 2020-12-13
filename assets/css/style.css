@@ -1,0 +1,37 @@
+html {
+    font-size: 62.5%; /* Now 10px = 1rem :) */
+    /* scroll-behavior: smooth; */
+    height: 100%;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        /* scroll-behavior: auto; */
+    }
+}
+body {
+    height: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-variant-ligatures: common-ligatures discretionary-ligatures;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+.page-enter-active, .page-leave-active,
+.layout-enter-active, .layout-leave-active {
+    transition: opacity .3s ease-in;
+}
+.page-enter, .page-leave-to,
+.layout-enter, .layout-leave-active {
+    opacity: 0;
+}
+  
+  
+  
+  

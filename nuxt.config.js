@@ -5,25 +5,37 @@ export default {
     ],
     components: true,
     i18n: {
-        locales: ['pt', 'en', 'es'],
+        locales: ['en', 'es', 'pt'],
         defaultLocale: 'pt',
         noPrefixDefaultLocale: true,
         vueI18n: {
             fallbackLocale: 'pt',
             messages: {
-                pt: {
-                    welcome: 'Bem-vinda',
-                    verTodos: 'Ver todos'
-                },
                 en: {
-                    welcome: 'Welcome',
-                    verTodos: 'See all'
+                    noMore: 'No more…',
+                    photo: 'Photo',
+                    published: 'Publicado:',
+                    seeAll: 'See all',
+                    welcome: 'Welcome'
                 },
                 es: {
-                    welcome: 'Bienvenido',
-                    verTodos: 'Ver todos'
+                    noMore: 'No más…',
+                    photo: 'Foto',
+                    published: 'Published:',
+                    seeAll: 'Ver todos',
+                    welcome: 'Bienvenida'
+                },
+                pt: {
+                    noMore: 'Nom mais…',
+                    photo: 'Foto',
+                    published: 'Publicado:',
+                    welcome: 'Bem-vinda',
+                    seeAll: 'Ver todos'
                 }
             }
         }
-    }
+    },
+    css: [
+        '@/assets/css/style.css'
+    ]
 }
