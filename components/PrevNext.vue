@@ -2,14 +2,14 @@
   <div class="next-prev container">
     <NuxtLink
       v-if="prev"
-      :to="localePath({ name: 'blog-slug', params: { slug: prev.slug } })"
+      :to="localePath({ name: 'pages-slug', params: { slug: prev.slug } })"
       class="next-prev__prev"
     >
       {{ prev.title }}
     </NuxtLink>
     <NuxtLink
       v-if="next"
-      :to="localePath({ name: 'blog-slug', params: { slug: next.slug } })"
+      :to="localePath({ name: 'pages-slug', params: { slug: next.slug } })"
       class="next-prev__next"
     >
       {{ next.title }}
@@ -40,5 +40,11 @@
     -webkit-box-pack: justify;
        -ms-flex-pack: justify;
      justify-content: space-between;
+  }
+  .next-prev__prev {
+    margin-right: auto;
+  }
+  .next-prev__next {
+    margin-left: auto;
   }
 </style>

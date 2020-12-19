@@ -1,14 +1,20 @@
 <template>
   <header class="header container">
+    <div class="logo">
+      Logo
+    </div>
     <ul class="nav">
+      <li class="nav__item">
+        <nuxt-link class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</nuxt-link>
+      </li>
       <li v-if="$i18n.locale !== 'pt'" class="nav__item">
-        <nuxt-link class="nav__link" :to="switchLocalePath('pt')">PT</nuxt-link>
+        <nuxt-link class="nav__link" :to="switchLocalePath('pt')">Galego</nuxt-link>
       </li>
       <li v-if="$i18n.locale !== 'en'" class="nav__item">
-        <nuxt-link class="nav__link" :to="switchLocalePath('en')">EN</nuxt-link>
+        <nuxt-link class="nav__link" :to="switchLocalePath('en')">English</nuxt-link>
       </li>
       <li v-if="$i18n.locale !== 'es'" class="nav__item">
-        <nuxt-link class="nav__link" :to="switchLocalePath('es')">ES</nuxt-link>
+        <nuxt-link class="nav__link" :to="switchLocalePath('es')">Castellano</nuxt-link>
       </li>
     </ul>
   </header>
@@ -16,13 +22,10 @@
 
 <script>
   export default {
-    // mounted() {
-    //   //console.log(this.article.title)
-    // },
     transition: {
       name: "layout"
     }
-  };
+  }
 </script>
 
 <style>

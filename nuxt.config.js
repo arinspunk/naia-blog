@@ -12,28 +12,47 @@ export default {
             fallbackLocale: 'pt',
             messages: {
                 en: {
-                    noMore: 'No more…',
+                    blogTitle: 'My Notebook',
+                    blogIntro: 'A sans serif font is preferred by some literacy personnel for teaching people to read. Its forms are simpler and less cluttered than those of most fonts.',
+                    lastPages: 'Last pages',
+                    pagesTitle: 'Pages',
                     photo: 'Photo',
                     published: 'Publicado:',
                     seeAll: 'See all',
-                    welcome: 'Welcome'
                 },
                 es: {
-                    noMore: 'No más…',
-                    photo: 'Foto',
-                    published: 'Published:',
-                    seeAll: 'Ver todos',
-                    welcome: 'Bienvenida'
-                },
-                pt: {
-                    noMore: 'Nom mais…',
+                    blogTitle: 'Mi cuaderno',
+                    blogIntro: 'A sans serif font is preferred by some literacy personnel for teaching people to read. Its forms are simpler and less cluttered than those of most fonts.',
+                    lastPages: 'Últimas páginas',
+                    pagesTitle: 'Páginas',
                     photo: 'Foto',
                     published: 'Publicado:',
-                    welcome: 'Bem-vinda',
+                    seeAll: 'Ver todos',
+                },
+                pt: {
+                    blogTitle: 'O meu caderno',
+                    blogIntro: 'A sans serif font is preferred by some literacy personnel for teaching people to read. Its forms are simpler and less cluttered than those of most fonts.',
+                    lastPages: 'Últimas páginas',
+                    pagesTitle: 'Páginas',
+                    photo: 'Foto',
+                    published: 'Publicado:',
                     seeAll: 'Ver todos'
                 }
             }
-        }
+        },
+        // parsePages: false,
+        // pages: {
+        //     'pages/index': {
+        //         en: '/pages',
+        //         es: '/paginas',
+        //         pt: '/paginas'
+        //     },
+        //     // 'pages/_slug': {
+        //     //     en: '/pages/*',
+        //     //     es: '/paginas/*',
+        //     //     pt: '/paginas/*'
+        //     // }
+        // }
     },
     css: [
         '@/assets/css/style.css'

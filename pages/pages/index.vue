@@ -1,14 +1,8 @@
 <template>
   <main class="container">
     <h1>
-      {{ $t('blogTitle') }}
+      {{ $t('pagesTitle') }}
     </h1>
-    <p>
-      {{ $t('blogIntro') }}
-    </p>
-    <h2>
-      {{ $t('lastPages') }}
-    </h2>
     <div class="articles">
       <article v-for="article of articles" :key="article.slug" class="article">
         <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
@@ -19,9 +13,6 @@
         </h2>
       </article>
     </div>
-    <NuxtLink :to="localePath('pages/index')" class="article__link">
-      {{ $t('seeAll') }}
-    </NuxtLink>
   </main>
 </template>
 
@@ -35,7 +26,14 @@
       return {
         articles
       };
-    }
+    },
+    // nuxtI18n: {
+    //     paths: {
+    //         en: '/pages/:index',
+    //         pt: '/paginas/:index',
+    //         es: '/paginas/:index'
+    //     }
+    // }
   };
 </script>
 

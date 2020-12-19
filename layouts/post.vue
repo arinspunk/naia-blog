@@ -1,5 +1,8 @@
 <template>
-    <Nuxt />
+    <div class="post">
+        <Nuxt />
+        <Footer />
+    </div>
 </template>
 
 <script>
