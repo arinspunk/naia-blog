@@ -55,6 +55,6 @@ export default {
         // }
     },
     css: [
-        '@/assets/css/style.css'
+        '@/assets/css/main.scss'
     ]
 }

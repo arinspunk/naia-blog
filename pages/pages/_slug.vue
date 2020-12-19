@@ -73,8 +73,5 @@ export default {
     display: block;
     margin: -15px 0 25px;
   }
-  figure {
-    margin: 30px 0;
-  }
 </style>
 

@@ -32,7 +32,7 @@
   }
 </script>
 
-<style lang="css">
+<style lang="scss">
   .next-prev {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,11 +40,11 @@
     -webkit-box-pack: justify;
        -ms-flex-pack: justify;
      justify-content: space-between;
-  }
-  .next-prev__prev {
-    margin-right: auto;
-  }
-  .next-prev__next {
-    margin-left: auto;
+    &__prev {
+      margin-right: auto;
+    }
+    &__next {
+      margin-left: auto;
+    }
   }
 </style>

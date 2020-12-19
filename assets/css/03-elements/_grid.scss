@@ -1,0 +1,17 @@
+/*
+    Grid
+*/
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+.page-enter-active, .page-leave-active,
+.layout-enter-active, .layout-leave-active {
+    transition: opacity .3s ease-in;
+}
+.page-enter, .page-leave-to,
+.layout-enter, .layout-leave-active {
+    opacity: 0;
+}

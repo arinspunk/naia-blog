@@ -6,15 +6,15 @@
 
 <script>
 export default {
-    computed: {
-        year () {
-            return new Date().getFullYear()
-        }
+  computed: {
+    year() {
+      return new Date().getFullYear();
     }
-}
+  }
+};
 </script>
 
-<style>
+<style lang="scss">
 .footer {
   padding: 20px 0;
   background: black;
