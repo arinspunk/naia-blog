@@ -10,5 +10,10 @@
     "@nuxt/content": "^1.11.0",
     "nuxt": "^2.14.7",
     "nuxt-i18n": "^6.15.4"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0"
   }
 }
