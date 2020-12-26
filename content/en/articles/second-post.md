@@ -2,6 +2,7 @@
 title: The second post
 img: cat.jpg
 alt: un example image
+colour: violet
 transEs: segundo-post
 transPt: segundo-post
 ---

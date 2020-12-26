@@ -1,34 +1,23 @@
 <template>
   <div>
-    <header class="header wrap">
-      <div class="wrap__row">
-        <div class="logo wrap__col wrap__col--2">
-          Logo
-        </div>
-        <ul class="nav wrap__col wrap__col--2">
-          <li class="nav__item">
-            <nuxt-link class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</nuxt-link>
-          </li>
-        </ul>
-        <ul class="nav wrap__col wrap__col--2">
-          <li v-if="$i18n.locale !== 'pt'" class="nav__item">
-            <nuxt-link class="nav__link" :to="switchLocalePath('pt')">Galego</nuxt-link>
-          </li>
-          <li v-if="$i18n.locale !== 'en'" class="nav__item">
-            <nuxt-link class="nav__link" :to="switchLocalePath('en')">English</nuxt-link>
-          </li>
-          <li v-if="$i18n.locale !== 'es'" class="nav__item">
-            <nuxt-link class="nav__link" :to="switchLocalePath('es')">Castellano</nuxt-link>
-          </li>
-        </ul>
+    <MainHeader
+      :key="article.name"
+      :article="article"
+    />
+    <article class="article wrap">
+      <div class="intro wrap__row">
+        <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right" :class="article.colour">{{ article.title }}</h1>
+        <time class="intro__text wrap__col wrap__col--4 wrap__col--right" :datetime="article.createdAt">{{ formatDate(article.createdAt,$i18n.locale) }}</time>
       </div>
-    </header>
-    <article class="wrap">
       <div class="wrap__row">
-        <h1 class="wrap__col wrap__col--4 wrap__col--right">{{ article.title }}</h1>
-        <time class="wrap__col wrap__col--4 wrap__col--right" :datetime="article.createdAt">{{ formatDate(article.createdAt,$i18n.locale) }}</time>
-        <img class="wrap__col wrap__col--4" :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" />
-        <nuxt-content class="wrap__col wrap__col--4 wrap__col--right" :document="article" />
+        <img class="article__img wrap__col wrap__col--4" :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" />
+        <div class="wrap__col wrap__col--4 wrap__col--right">
+          <div class="wrap__row">
+            <div class="wrap__col wrap__col--3">
+              <nuxt-content :document="article" />
+            </div>
+          </div>
+        </div>
       </div>  
     </article>
     <prev-next :prev="prev" :next="next" />
@@ -68,12 +57,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  h1 {
-    margin-bottom: 0;
-    color: red;
-  }
-  time {
-    margin-bottom: 120px;
+  .article {
+    &__img {
+      margin-bottom: 50px;
+    }
   }
 </style>
 

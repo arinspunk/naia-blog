@@ -2,6 +2,7 @@
 title: A rena
 img: cat.jpg
 alt: umha imagem de exemplo
+colour: orange
 transEs: reno
 transEn: reindeer
 ---

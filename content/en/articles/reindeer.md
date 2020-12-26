@@ -2,6 +2,7 @@
 title: The reindeer
 img: cat.jpg
 alt: umha imagem de exemplo
+colour: violet
 transEs: reno
 transPt: rena
 ---

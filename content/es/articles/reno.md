@@ -2,6 +2,7 @@
 title: El reno
 img: cat.jpg
 alt: umha imagem de exemplo
+colour: violet
 transPt: rena
 transEn: reindeer
 ---

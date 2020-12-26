@@ -1,7 +1,7 @@
 <template>
   <main class="wrap">
     <div class="intro wrap__row">
-      <h1 class="wrap__col wrap__col--4 wrap__col--right">
+      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right">
         {{ $t('blogTitle') }}
       </h1>
       <div class="wrap__col wrap__col--4 wrap__col--right">
@@ -19,14 +19,11 @@
         </h2>
       </div>
       <div class="wrap__row">
-        <article v-for="article of articles" :key="article.slug" class="wrap__col wrap__col--2 article">
-          <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
-          <h3 class="article__title">
-            <NuxtLink :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })" class="article__link">
-              {{ article.title }}
-            </NuxtLink>
-          </h3>
-        </article>
+        <BlogCard
+          v-for="article in articles"
+          :key="article.name"
+          :article="article"
+        />
         <div class="wrap__col wrap__col--6">
           <NuxtLink :to="localePath('pages/index')" class="articles__link">
             {{ $t('seeAll') }}
@@ -53,10 +50,4 @@
 </script>
 
 <style scoped lang="scss">
-  h1 {
-    margin-bottom: 14px;
-  }
-  h2 {
-    margin-bottom: 80px;
-  }
 </style>

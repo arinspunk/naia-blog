@@ -2,6 +2,7 @@
 title: El primer post
 img: cat.jpg
 alt: una imagen de ejemplo
+colour: violet
 transEn: first-post
 transPt: primeiro-post
 ---

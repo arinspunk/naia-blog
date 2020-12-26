@@ -107,6 +107,9 @@ h3, p, ul, ol {
         font-size: $p-size-l;
         font-size: var(--p-size-l);
     }  
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 a {

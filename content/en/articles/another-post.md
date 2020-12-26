@@ -2,6 +2,7 @@
 title: Another post!
 img: cat.jpg
 alt: un example image
+colour: violet
 transEs: otro-post
 transPt: outro-post
 ---

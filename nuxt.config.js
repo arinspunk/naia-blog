@@ -37,7 +37,7 @@ export default {
                     pagesTitle: 'Páginas',
                     photo: 'Foto',
                     published: 'Publicado:',
-                    seeAll: 'Ver todos',
+                    seeAll: 'Ver todas',
                 },
                 pt: {
                     blogTitle: 'O meu caderno',
@@ -46,7 +46,7 @@ export default {
                     pagesTitle: 'Páginas',
                     photo: 'Foto',
                     published: 'Publicado:',
-                    seeAll: 'Ver todos'
+                    seeAll: 'Ver todas'
                 }
             }
         },

@@ -9,14 +9,11 @@
       </p>
     </div>
     <div class="articles wrap__row">
-      <article v-for="article of articles" :key="article.slug" class="wrap__col wrap__col--2 article">
-        <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
-        <h2 class="article__title">
-          <NuxtLink :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })" class="article__link">
-            {{ article.title }}
-          </NuxtLink>
-        </h2>
-      </article>
+      <BlogCard
+        v-for="article in articles"
+        :key="article.name"
+        :article="article"
+      />
     </div>
   </main>
 </template>

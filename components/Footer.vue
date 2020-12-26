@@ -1,6 +1,6 @@
 <template>
   <footer class="footer wrap">
-    <div class="wrap__row">
+    <div class="footer__wrap wrap__row">
       <div class="wrap__col wrap__col--6">© Naia & Zé {{ year }}</div>
     </div>
   </footer>
@@ -18,11 +18,14 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  height: 70px;
   background: black;
   background: var(--black);
   color: white;
   color: var(--white);
-  align-items: center;
+  margin-top: 170px;
+  &__wrap {
+    height: 70px;
+    align-items: center;
+  }
 }
 </style>
