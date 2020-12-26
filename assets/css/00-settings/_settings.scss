@@ -5,6 +5,7 @@
 /* Basic Unit */
 $bu-value: 5;
 $bu: $bu-value * 1px;
+$gutter: 40px;
 
 // mq values (no unit)
 $bp--medium-value: 48; 
@@ -24,37 +25,39 @@ $max-content-width: 92.5rem; /* 1480px */
 }
 
 /* Colors */
-$color-paper: #fff;
-$color-ink: #00000B;
-$color-link: #0000FF;
-$color-deep: #00000B;
-$color-light: #00FFF3;
-$color-sun: #FFE600;
+$white: #fff;
+$black: #000000;
+$red: #FF000F;
+$orange: #FF8A00;
+$yellow: #FFC700;
+$green: #48D931;
+$blue: #00B2FF;
+$violet: #9137D7;
+$brown: #854000;
+$pink: #FF9898;
 
 :root {
-  --color-paper: #{$color-paper};
-  --color-ink: #{$color-ink};
-  --color-link: #{$color-link};
-  --color-deep: #{$color-deep};
-  --color-light: #{$color-light};
-  --color-sun: #{$color-sun};
+  --white: #{$white};
+  --black: #{$black};
+  --red: #{$red};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --green: #{$green};
+  --blue: #{$blue};
+  --violet: #{$violet};
+  --brown: #{$brown};
+  --pink: #{$pink};
 }
 
 /* Fonts */
 $fonts-base-sans: Helvetica, Arial, sans-serif;
-$fonts-base-serif: Georgia, 'Times New Roman', Times, serif;
-
-$fonts-sans: 'sawton_industrialthin', $fonts-base-sans; 
-$fonts-sans-alt: 'sawton_bauhausthin', $fonts-base-sans; 
-$fonts-serif: $fonts-base-serif; /* No web fonts specified for Serif */
+$fonts-sans: 'Andika', $fonts-base-sans; 
+$fonts-sans-alt: 'geomanistregular', $fonts-base-sans; 
 
 :root {
   --fonts-base-sans: #{$fonts-base-sans};
-  --fonts-base-serif: #{$fonts-base-serif};
-
   --fonts-sans: #{$fonts-sans};
   --fonts-sans-alt: #{$fonts-sans-alt};
-  --fonts-serif: #{$fonts-serif};
 }
 
 /* Text sizing */
@@ -65,21 +68,17 @@ $text-base-size: 16;
 /* Preprocessed for fallbacks */
 
 /* Change px values here for all font sizing */
-$p-size-l-px: 21;
-$p-size-m-px: 19;
-$p-size-s-px: 17;
+$p-size-l-px: 24;
+$p-size-m-px: 22;
+$p-size-s-px: 18.5;
 
-$h1-size-l-px: 80;
-$h1-size-m-px: 72;
-$h1-size-s-px: 41;
+$h1-size-l-px: 144;
+$h1-size-m-px: 132;
+$h1-size-s-px: 120;
 
-$h2-size-l-px: 51;
-$h2-size-m-px: 46;
-$h2-size-s-px: 33;
-
-$h3-size-l-px: 32;
-$h3-size-m-px: 30;
-$h3-size-s-px: 21;
+$h2-size-l-px: 48;
+$h2-size-m-px: 44;
+$h2-size-s-px: 40;
 
 /* Font size rem values (needed for dynamic sizing) */
 $p-size-l-value: $p-size-l-px / $text-base-size;
@@ -94,10 +93,6 @@ $h2-size-l-value: $h2-size-l-px / $text-base-size;
 $h2-size-m-value: $h2-size-m-px / $text-base-size;
 $h2-size-s-value: $h2-size-s-px / $text-base-size;
 
-$h3-size-l-value: $h3-size-l-px / $text-base-size;
-$h3-size-m-value: $h3-size-m-px / $text-base-size;
-$h3-size-s-value: $h3-size-s-px / $text-base-size;
-
 /* Font sizes in rems */
 $p-size-l: $p-size-l-value * 1rem;
 $p-size-m: $p-size-m-value * 1rem;
@@ -111,26 +106,18 @@ $h2-size-l: $h2-size-l-value * 1rem;
 $h2-size-m: $h2-size-m-value * 1rem;
 $h2-size-s: $h2-size-s-value * 1rem;
 
-$h3-size-l: $h3-size-l-value * 1rem;
-$h3-size-m: $h3-size-m-value * 1rem;
-$h3-size-s: $h3-size-s-value * 1rem;
-
 /* Line-height */
-$p-lh-l-value: 30;
-$p-lh-m-value: 25;
-$p-lh-s-value: 25;
+$p-lh-l-value: 40;
+$p-lh-m-value: 35;
+$p-lh-s-value: 30;
 
-$h1-lh-l-value: 90;
-$h1-lh-m-value: 80;
-$h1-lh-s-value: 50;
+$h1-lh-l-value: 155;
+$h1-lh-m-value: 140;
+$h1-lh-s-value: 130;
 
-$h2-lh-l-value: 70;
-$h2-lh-m-value: 60;
+$h2-lh-l-value: 55;
+$h2-lh-m-value: 50;
 $h2-lh-s-value: 45;
-
-$h3-lh-l-value: 50;
-$h3-lh-m-value: 45;
-$h3-lh-s-value: 25;
 
 $p-lh-l: $p-lh-l-value / $p-size-l-px;
 $p-lh-m: $p-lh-m-value / $p-size-m-px;
@@ -143,10 +130,6 @@ $h1-lh-s: $h1-lh-s-value / $h1-size-s-px;
 $h2-lh-l: $h2-lh-l-value / $h2-size-l-px;
 $h2-lh-m: $h2-lh-m-value / $h2-size-m-px;
 $h2-lh-s: $h2-lh-s-value / $h2-size-s-px;
-
-$h3-lh-l: $h3-lh-l-value / $h3-size-l-px;
-$h3-lh-m: $h3-lh-m-value / $h3-size-m-px;
-$h3-lh-s: $h3-lh-s-value / $h3-size-s-px;
 
 /* Custom props for modern browsers */
 :root {
@@ -161,10 +144,6 @@ $h3-lh-s: $h3-lh-s-value / $h3-size-s-px;
   --h2-size-l-value: #{$h2-size-l-value};
   --h2-size-m-value: #{$h2-size-m-value};
   --h2-size-s-value: #{$h2-size-s-value};
-  
-  --h3-size-l-value: #{$h3-size-l-value};
-  --h3-size-m-value: #{$h3-size-m-value};
-  --h3-size-s-value: #{$h3-size-s-value};
 
   --p-size-l: #{$p-size-l-value * 1rem};
   --p-size-m: #{$p-size-m-value * 1rem};
@@ -177,10 +156,6 @@ $h3-lh-s: $h3-lh-s-value / $h3-size-s-px;
   --h2-size-l: #{$h2-size-l-value * 1rem};
   --h2-size-m: #{$h2-size-m-value * 1rem};
   --h2-size-s: #{$h2-size-s-value * 1rem};
-  
-  --h3-size-l: #{$h3-size-l-value * 1rem};
-  --h3-size-m: #{$h3-size-m-value * 1rem};
-  --h3-size-s: #{$h3-size-s-value * 1rem};
 
   --p-lh-l: #{$p-lh-l};
   --p-lh-m: #{$p-lh-m};
@@ -194,46 +169,30 @@ $h3-lh-s: $h3-lh-s-value / $h3-size-s-px;
   --h2-lh-m: #{$h2-lh-m};
   --h2-lh-s: #{$h2-lh-s};
   
-  --h3-lh-l: #{$h3-lh-l};
-  --h3-lh-m: #{$h3-lh-m};
-  --h3-lh-s: #{$h3-lh-s};
-  
 }
 
-/* Responsive text-size spacer */
-$body-text-spacer-s: $p-size-s;
-$body-text-spacer-m: $p-size-m;
-$body-text-spacer-l: $p-size-l;
-
-:root {
-  --body-text-spacer: #{$body-text-spacer-s};
-  @media screen and (min-width: $bp--medium) {
-    --body-text-spacer: #{$body-text-spacer-m};
-  }  
-  @media screen and (min-width: $bp--large) {
-    --body-text-spacer: #{$body-text-spacer-l};
-  }  
+@font-face {
+  font-family: 'geomanistregular';
+  src: url('~assets/fonts/geomanist-bold-webfont.eot');
+  src: url('~assets/fonts/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('~assets/fonts/geomanist-bold-webfont.woff2') format('woff2'),
+       url('~assets/fonts/geomanist-bold-webfont.woff') format('woff'),
+       url('~assets/fonts/geomanist-bold-webfont.ttf') format('truetype'),
+       url('~assets/fonts/geomanist-bold-webfont.svg#geomanistregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Swipe UI */
-:root {
-  --page-count: 1;
+@font-face {
+  font-family: 'Andika';
+  src: url('~assets/fonts/Andika-Regular.eot');
+  src: url('~assets/fonts/Andika-Regular.eot?#iefix') format('embedded-opentype'),
+       url('~assets/fonts/Andika-Regular.woff2') format('woff2'),
+       url('~assets/fonts/Andika-Regular.woff') format('woff'),
+       url('~assets/fonts/Andika-Regular.ttf') format('truetype'),
+       url('~assets/fonts/Andika-Regular.svg#Andika-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
-// @font-face {
-//     font-family: 'sawton_industrialthin';
-//     src: url('../fonts/sawtonindustrial-thin-webfont.woff2') format('woff2'),
-//          url('../fonts/sawtonindustrial-thin-webfont.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: 'sawton_bauhausthin';
-//     src: url('../fonts/sawtonbauhaus-thin-webfont.woff2') format('woff2'),
-//          url('../fonts/sawtonbauhaus-thin-webfont.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }

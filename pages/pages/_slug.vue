@@ -1,36 +1,37 @@
 <template>
   <div>
-    <header class="header container">
-      <div class="logo">
-        Logo
+    <header class="header wrap">
+      <div class="wrap__row">
+        <div class="logo wrap__col wrap__col--2">
+          Logo
+        </div>
+        <ul class="nav wrap__col wrap__col--2">
+          <li class="nav__item">
+            <nuxt-link class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</nuxt-link>
+          </li>
+        </ul>
+        <ul class="nav wrap__col wrap__col--2">
+          <li v-if="$i18n.locale !== 'pt'" class="nav__item">
+            <nuxt-link class="nav__link" :to="switchLocalePath('pt')">Galego</nuxt-link>
+          </li>
+          <li v-if="$i18n.locale !== 'en'" class="nav__item">
+            <nuxt-link class="nav__link" :to="switchLocalePath('en')">English</nuxt-link>
+          </li>
+          <li v-if="$i18n.locale !== 'es'" class="nav__item">
+            <nuxt-link class="nav__link" :to="switchLocalePath('es')">Castellano</nuxt-link>
+          </li>
+        </ul>
       </div>
-      <ul class="nav">
-        <li class="nav__item">
-          <nuxt-link class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</nuxt-link>
-        </li>
-        <li v-if="$i18n.locale !== 'pt'" class="nav__item">
-          <nuxt-link v-if="article.transPt == undefined" class="nav__link" to="/">Galego</nuxt-link>
-          <nuxt-link v-else class="nav__link" :to="`/pages/${article.transPt}`">Galego</nuxt-link>
-        </li>
-        <li v-if="$i18n.locale !== 'en'" class="nav__item">
-          <nuxt-link v-if="article.transEn == undefined" class="nav__link" to="/en">English</nuxt-link>
-          <nuxt-link v-else class="nav__link" :to="`/en/pages/${article.transEn}`">English</nuxt-link>
-        </li>
-        <li v-if="$i18n.locale !== 'es'" class="nav__item">
-          <nuxt-link v-if="article.transEs == undefined" class="nav__link" to="/es">Castellano</nuxt-link>
-          <nuxt-link v-else class="nav__link" :to="`/es/pages/${article.transEs}`">Castellano</nuxt-link>
-        </li>
-      </ul>
     </header>
-    <article class="container">
-      <h1>{{ article.title }}</h1>
-      <small class="date">
-        <time :datetime="article.createdAt">{{ formatDate(article.createdAt,$i18n.locale) }}</time>
-      </small>
-      <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="main-img" />
-      <nuxt-content :document="article" />
-      <prev-next :prev="prev" :next="next" />
+    <article class="wrap">
+      <div class="wrap__row">
+        <h1 class="wrap__col wrap__col--4 wrap__col--right">{{ article.title }}</h1>
+        <time class="wrap__col wrap__col--4 wrap__col--right" :datetime="article.createdAt">{{ formatDate(article.createdAt,$i18n.locale) }}</time>
+        <img class="wrap__col wrap__col--4" :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" />
+        <nuxt-content class="wrap__col wrap__col--4 wrap__col--right" :document="article" />
+      </div>  
     </article>
+    <prev-next :prev="prev" :next="next" />
   </div>
 </template>
 
@@ -38,10 +39,10 @@
 export default {
     layout: 'post',
     methods: {
-        formatDate(date,locale) {
-          const options = { year: "numeric", month: "long", day: "numeric" };
-          return new Date(date).toLocaleDateString(locale, options);
-        }
+      formatDate(date,locale) {
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        return new Date(date).toLocaleDateString(locale, options);
+      }
     },
     // nuxtI18n: {
     //   paths: {
@@ -51,27 +52,28 @@ export default {
     //   }
     // },
     async asyncData({ app, $content, params }) {
-        const article = await $content(`${app.i18n.locale}/articles`, params.slug).fetch()
-
-        const [prev, next] = await $content(`${app.i18n.locale}/articles`)
-        .only(['title', 'slug'])
-        .sortBy('createdAt', 'asc')
-        .surround(params.slug)
-        .fetch()
-
-        return {
-            article,
-            prev,
-            next
-        }
+      const article = await $content(`${app.i18n.locale}/articles`, params.slug).fetch()
+      const [prev, next] = await $content(`${app.i18n.locale}/articles`)
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+      return {
+        article,
+        prev,
+        next
+      }
     }
 };
 </script>
 
-<style>
-  .date {
-    display: block;
-    margin: -15px 0 25px;
+<style scoped lang="scss">
+  h1 {
+    margin-bottom: 0;
+    color: red;
+  }
+  time {
+    margin-bottom: 120px;
   }
 </style>
 

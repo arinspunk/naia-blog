@@ -1,22 +1,26 @@
 <template>
-  <header class="header container">
-    <div class="logo">
-      Logo
+  <header class="header wrap">
+    <div class="wrap__row">
+      <div class="logo wrap__col wrap__col--2">
+        Logo
+      </div>
+      <ul class="nav wrap__col wrap__col--2">
+        <li class="nav__item">
+          <nuxt-link class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</nuxt-link>
+        </li>
+      </ul>
+      <ul class="nav wrap__col wrap__col--2">
+        <li v-if="$i18n.locale !== 'pt'" class="nav__item">
+          <nuxt-link class="nav__link" :to="switchLocalePath('pt')">Galego</nuxt-link>
+        </li>
+        <li v-if="$i18n.locale !== 'en'" class="nav__item">
+          <nuxt-link class="nav__link" :to="switchLocalePath('en')">English</nuxt-link>
+        </li>
+        <li v-if="$i18n.locale !== 'es'" class="nav__item">
+          <nuxt-link class="nav__link" :to="switchLocalePath('es')">Castellano</nuxt-link>
+        </li>
+      </ul>
     </div>
-    <ul class="nav">
-      <li class="nav__item">
-        <nuxt-link class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</nuxt-link>
-      </li>
-      <li v-if="$i18n.locale !== 'pt'" class="nav__item">
-        <nuxt-link class="nav__link" :to="switchLocalePath('pt')">Galego</nuxt-link>
-      </li>
-      <li v-if="$i18n.locale !== 'en'" class="nav__item">
-        <nuxt-link class="nav__link" :to="switchLocalePath('en')">English</nuxt-link>
-      </li>
-      <li v-if="$i18n.locale !== 'es'" class="nav__item">
-        <nuxt-link class="nav__link" :to="switchLocalePath('es')">Castellano</nuxt-link>
-      </li>
-    </ul>
   </header>
 </template>
 
@@ -28,19 +32,9 @@
   }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   .header {
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  .nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-    &__item {
-      display: inline-block;
-      margin-left: 10px;
-    }
+    height: 70px;
+    background: $white;
   }
 </style>

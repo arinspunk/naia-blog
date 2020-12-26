@@ -1,27 +1,39 @@
 <template>
-  <main class="container">
-    <h1>
-      {{ $t('blogTitle') }}
-    </h1>
-    <p>
-      {{ $t('blogIntro') }}
-    </p>
-    <h2>
-      {{ $t('lastPages') }}
-    </h2>
-    <div class="articles">
-      <article v-for="article of articles" :key="article.slug" class="article">
-        <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
-        <h2 class="article__title">
-          <NuxtLink :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })" class="article__link">
-            {{ article.title }}
-          </NuxtLink>
-        </h2>
-      </article>
+  <main class="wrap">
+    <div class="intro wrap__row">
+      <h1 class="wrap__col wrap__col--4 wrap__col--right">
+        {{ $t('blogTitle') }}
+      </h1>
+      <div class="wrap__col wrap__col--4 wrap__col--right">
+        <div class="wrap__row">
+          <p class="intro__text wrap__col wrap__col--3">
+            {{ $t('blogIntro') }}
+          </p>
+        </div>
+      </div>
     </div>
-    <NuxtLink :to="localePath('pages/index')" class="article__link">
-      {{ $t('seeAll') }}
-    </NuxtLink>
+    <div class="articles">
+      <div class="wrap__row">
+        <h2 class="wrap__col wrap__col--4 wrap__col--right">
+          {{ $t('lastPages') }}:
+        </h2>
+      </div>
+      <div class="wrap__row">
+        <article v-for="article of articles" :key="article.slug" class="wrap__col wrap__col--2 article">
+          <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
+          <h3 class="article__title">
+            <NuxtLink :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })" class="article__link">
+              {{ article.title }}
+            </NuxtLink>
+          </h3>
+        </article>
+        <div class="wrap__col wrap__col--6">
+          <NuxtLink :to="localePath('pages/index')" class="articles__link">
+            {{ $t('seeAll') }}
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -31,30 +43,20 @@
       const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
         .only(["title", "description", "slug", "img"])
         .sortBy("createdAt", "desc")
+        .limit(3)
         .fetch();
       return {
         articles
       };
     }
-  };
+  }
 </script>
 
-<style>
-  .articles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+<style scoped lang="scss">
+  h1 {
+    margin-bottom: 14px;
   }
-  article {
-    -ms-flex: 0 0 calc(50% - 30px);
-        flex: 0 0 calc(50% - 30px);
-    max-width: calc(50% - 30px);
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 0 25px;
+  h2 {
+    margin-bottom: 80px;
   }
 </style>

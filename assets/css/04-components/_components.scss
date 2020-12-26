@@ -1,0 +1,45 @@
+/*
+    Components
+*/
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__item {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+.intro {
+    &__title {
+        margin-bottom: 0;
+    }
+    &__text {
+        margin-bottom: 120px;
+    }
+}
+.article {
+    &__img {
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-family: $fonts-sans;
+        font-family: var(--fonts-sans);
+        font-weight: normal;
+        font-size: $p-size-s;
+        font-size: var(--p-size-s);
+        font-variant-ligatures: common-ligatures;
+        text-transform: none;
+        @media screen and (min-width: $bp--medium) {
+            font-size: $p-size-m;
+            font-size: var(--p-size-m);
+        }  
+        @media screen and (min-width: $bp--xlarge) {
+            font-size: $p-size-l;
+            font-size: var(--p-size-l);
+        }  
+    }
+    &__link {
+      text-decoration: none;
+    }
+}

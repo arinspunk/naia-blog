@@ -1,19 +1,21 @@
 <template>
-  <div class="next-prev container">
-    <NuxtLink
-      v-if="prev"
-      :to="localePath({ name: 'pages-slug', params: { slug: prev.slug } })"
-      class="next-prev__prev"
-    >
-      {{ prev.title }}
-    </NuxtLink>
-    <NuxtLink
-      v-if="next"
-      :to="localePath({ name: 'pages-slug', params: { slug: next.slug } })"
-      class="next-prev__next"
-    >
-      {{ next.title }}
-    </NuxtLink>
+  <div class="next-prev wrap">
+    <div class="wrap__row">
+      <NuxtLink
+        v-if="prev"
+        :to="localePath({ name: 'pages-slug', params: { slug: prev.slug } })"
+        class="next-prev__prev wrap__col wrap__col--2 wrap__col--left"
+      >
+        {{ prev.title }}
+      </NuxtLink>
+      <NuxtLink
+        v-if="next"
+        :to="localePath({ name: 'pages-slug', params: { slug: next.slug } })"
+        class="next-prev__next wrap__col wrap__col--2 wrap__col--right"
+      >
+        {{ next.title }}
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -32,19 +34,10 @@
   }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   .next-prev {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-     justify-content: space-between;
-    &__prev {
-      margin-right: auto;
-    }
     &__next {
-      margin-left: auto;
+      text-align: right;
     }
   }
 </style>

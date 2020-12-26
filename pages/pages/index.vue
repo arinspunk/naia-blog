@@ -1,10 +1,15 @@
 <template>
-  <main class="container">
-    <h1>
-      {{ $t('pagesTitle') }}
-    </h1>
-    <div class="articles">
-      <article v-for="article of articles" :key="article.slug" class="article">
+  <main class="wrap">
+    <div class="intro wrap__row">
+      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right">
+        {{ $t('pagesTitle') }} 
+      </h1>
+      <p class="intro__text wrap__col wrap__col--4 wrap__col--right">
+        Ahora mismo mi cuaderno tiene 4 páginas {{ $t('') }}
+      </p>
+    </div>
+    <div class="articles wrap__row">
+      <article v-for="article of articles" :key="article.slug" class="wrap__col wrap__col--2 article">
         <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
         <h2 class="article__title">
           <NuxtLink :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })" class="article__link">
@@ -37,22 +42,5 @@
   };
 </script>
 
-<style>
-  .articles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  article {
-    -ms-flex: 0 0 calc(50% - 30px);
-        flex: 0 0 calc(50% - 30px);
-    max-width: calc(50% - 30px);
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 0 25px;
-  }
+<style scoped lang="scss">
 </style>

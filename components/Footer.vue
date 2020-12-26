@@ -1,6 +1,8 @@
 <template>
-  <footer class="footer">
-    <div class="container">© Naia & Zé {{ year }}</div>
+  <footer class="footer wrap">
+    <div class="wrap__row">
+      <div class="wrap__col wrap__col--6">© Naia & Zé {{ year }}</div>
+    </div>
   </footer>
 </template>
 
@@ -11,13 +13,16 @@ export default {
       return new Date().getFullYear();
     }
   }
-};
+}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .footer {
-  padding: 20px 0;
+  height: 70px;
   background: black;
+  background: var(--black);
   color: white;
+  color: var(--white);
+  align-items: center;
 }
 </style>
