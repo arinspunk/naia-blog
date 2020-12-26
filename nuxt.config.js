@@ -1,9 +1,19 @@
 export default {
+    components: true,
     modules: [
         '@nuxt/content',
         'nuxt-i18n'
     ],
-    components: true,
+    css: [
+        '@/assets/css/main.scss'
+    ],
+    buildModules: ['@nuxtjs/style-resources'],
+    styleResources: {
+        scss: [
+        './assets/css/00-settings/*.scss',
+        './assets/css/01-tools/*.scss'
+        ]
+    },
     i18n: {
         locales: ['en', 'es', 'pt'],
         defaultLocale: 'pt',
@@ -54,7 +64,4 @@ export default {
         //     // }
         // }
     },
-    css: [
-        '@/assets/css/main.scss'
-    ]
 }
