@@ -52,7 +52,23 @@ export default {
         prev,
         next
       }
-    }
+    },
+    head () {
+      return {
+        title: this.article.title + ' – ' + this.$t('blogTitle'),
+        htmlAttrs: {
+          lang: this.$i18n.locale,
+        },
+        meta: [
+          { name: "author", content: "Naia & Zé" },
+          { name: "description", property: "og:description", content: this.article.description, hid: "description" },
+          { property: "og:title", content: this.article.title + ' – ' + this.$t('blogTitle') },
+          { property: "og:image", content: "/cat.jpg" },
+          { name: "twitter:description", content: this.article.description },
+          { name: "twitter:image", content: "/cat.jpg" }
+        ],
+      };
+    },
 };
 </script>
 

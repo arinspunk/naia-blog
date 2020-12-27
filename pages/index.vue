@@ -45,7 +45,23 @@
       return {
         articles
       };
-    }
+    },
+    head () {
+      return {
+        title: this.$t('blogTitle'),
+        htmlAttrs: {
+          lang: this.$i18n.locale,
+        },
+        meta: [
+          { name: "author", content: "Naia & Zé" },
+          { name: "description", property: "og:description", content: this.$t('blogIntro'), hid: "description" },
+          { property: "og:title", content: this.$t('blogTitle') },
+          { property: "og:image", content: "/cat.jpg" },
+          { name: "twitter:description", content: this.$t('blogIntro') },
+          { name: "twitter:image", content: "/cat.jpg" }
+        ],
+      };
+    },
   }
 </script>
 
