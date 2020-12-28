@@ -4,7 +4,7 @@
         :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })"
         class="article__link"
     >
-        <img :src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img" />
+        <img :data-src="require(`~/assets/images/${article.img}`)" :alt="article.alt" class="article__img lazyload" />
     </NuxtLink>
     <h3 class="article__title">
       <NuxtLink
