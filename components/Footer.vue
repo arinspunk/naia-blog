@@ -18,11 +18,12 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  background: black;
-  background: var(--black);
-  color: white;
-  color: var(--white);
+  background: $white;
+  background: var(--white);
   margin-top: 170px;
+  border-top: 1px solid;
+  border-color: $black;
+  border-color: var(--black);
   &__wrap {
     height: 70px;
     align-items: center;
