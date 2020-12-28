@@ -1,7 +1,7 @@
 <template>
   <main class="wrap">
     <div class="intro wrap__row">
-      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right">
+      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right brown">
         {{ $t('blogTitle') }}
       </h1>
       <div class="wrap__col wrap__col--4 wrap__col--right">
@@ -14,7 +14,7 @@
     </div>
     <div class="articles">
       <div class="wrap__row">
-        <h2 class="wrap__col wrap__col--4 wrap__col--right">
+        <h2 class="articles__title wrap__col wrap__col--4 wrap__col--right">
           {{ $t('lastPages') }}:
         </h2>
       </div>
@@ -24,8 +24,8 @@
           :key="article.name"
           :article="article"
         />
-        <div class="wrap__col wrap__col--6">
-          <NuxtLink :to="localePath('pages/index')" class="articles__link">
+        <div class="articles__link-wrap wrap__col wrap__col--6 text-center">
+          <NuxtLink :to="localePath('/pages/')" class="articles__link button">
             {{ $t('seeAll') }}
           </NuxtLink>
         </div>
@@ -66,4 +66,14 @@
 </script>
 
 <style scoped lang="scss">
+  .articles {
+    &__title {
+      margin-top: 45px;
+      margin-bottom: 80px;
+    }
+    &__link-wrap {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
 </style>
