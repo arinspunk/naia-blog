@@ -1,11 +1,11 @@
 <template>
   <main class="wrap">
     <div class="intro wrap__row">
-      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right">
+      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right pink">
         {{ $t('pagesTitle') }} 
       </h1>
       <p class="intro__text wrap__col wrap__col--4 wrap__col--right">
-        Ahora mismo mi cuaderno tiene 4 páginas {{ $t('') }}
+        {{ $t('pagesNumber', { number: articles.length }) }}
       </p>
     </div>
     <div class="articles wrap__row">
