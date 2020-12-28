@@ -97,5 +97,15 @@ export default {
             { rel: 'mask-icon', type: 'image/png', href: '/favicons/safari-pinned-tab.svg', color: '#ffffff' }
         ]
     },
-
+    plugins: [
+    '~/plugins/lazysizes.client.js'
+    ],
+    build: {
+        extend (config, { isDev, isClient, loaders: { vue } }) {
+            if (isClient) {
+            vue.transformAssetUrls.img = ['data-src', 'src']
+            vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+            }
+        }
+    },
 }
