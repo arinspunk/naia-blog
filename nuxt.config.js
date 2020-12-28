@@ -72,10 +72,11 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { name: 'msapplication-TileColor', content: '#ffffff' },
             { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
-            { name: 'theme-color', content: '#c1c1c1' },
+            { name: 'theme-color', content: '#ffffff' },
             { name: 'robots', content: 'index, follow' },
             { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:site', content: '@marinaaisa' },
+            { name: 'twitter:site', content: '@arinspunk' },
+            { name: 'twitter:creator', content: '@arinspunk' },
             { property: 'og:type', content: 'profile' },
             { property: 'og:updated_time', content: builtAt }
         ],
@@ -93,7 +94,7 @@ export default {
             { rel: 'apple-touch-icon', href: '/favicons/apple-touch-icon-144x144.png', sizes: '144x144' },
             { rel: 'apple-touch-icon', href: '/favicons/apple-touch-icon-152x152.png', sizes: '152x152' },
             { rel: 'apple-touch-icon', href: '/favicons/apple-touch-icon-180x180.png', sizes: '180x180' },
-            { rel: 'mask-icon', type: 'image/png', href: '/favicons/safari-pinned-tab.svg', color: '#c1c1c1' }
+            { rel: 'mask-icon', type: 'image/png', href: '/favicons/safari-pinned-tab.svg', color: '#ffffff' }
         ]
     },
 

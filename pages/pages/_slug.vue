@@ -65,7 +65,7 @@ export default {
           { property: "og:title", content: this.article.title + ' – ' + this.$t('blogTitle') },
           { property: "og:image", content: "/cat.jpg" },
           { name: "twitter:description", content: this.article.description },
-          { name: "twitter:image", content: "/cat.jpg" }
+          { name: "twitter:image", content: require(`~/assets/images/${this.article.img}`) }
         ],
       };
     },
