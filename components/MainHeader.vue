@@ -9,7 +9,7 @@
           <NuxtLink class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</NuxtLink>
         </li>
       </ul>
-      <ul v-if="this.$route.name == 'pages-slug___pt' || this.$route.name == 'pages-slug___es' || this.$route.name == 'pages-slug___en'" class="nav wrap__col wrap__col--2">
+      <ul v-if="this.$route.name == 'pages-slug___pt' || this.$route.name == 'pages-slug___es' || this.$route.name == 'pages-slug___en'" class="languages nav wrap__col wrap__col--2">
         <li v-if="$i18n.locale !== 'pt'" class="nav__item">
           <NuxtLink v-if="article.transPt == undefined" class="nav__link" to="/">Galego</NuxtLink>
           <NuxtLink v-else class="nav__link" :to="`/pages/${article.transPt}`">Galego</NuxtLink>
@@ -23,7 +23,7 @@
           <NuxtLink v-else class="nav__link" :to="`/es/pages/${article.transEs}`">Castellano</NuxtLink>
         </li>
       </ul>
-      <ul v-else class="nav wrap__col wrap__col--2">
+      <ul v-else class="languages nav wrap__col wrap__col--2">
         <li v-if="$i18n.locale !== 'pt'" class="nav__item">
           <NuxtLink class="nav__link" :to="switchLocalePath('pt')">Galego</NuxtLink>
         </li>
@@ -49,4 +49,7 @@
 </script>
 
 <style scoped lang="scss">
+.languages {
+  opacity: .5;
+}
 </style>
