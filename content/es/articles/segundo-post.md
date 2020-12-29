@@ -1,6 +1,6 @@
 ---
 title: El segundo post
-img: cat.jpg
+img: thumbnail.jpg
 alt: una imagen de ejemplo
 colour: violet
 transEn: second-post

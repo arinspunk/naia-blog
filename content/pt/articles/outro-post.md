@@ -1,6 +1,6 @@
 ---
 title: Mais outro post!
-img: cat.jpg
+img: thumbnail.jpg
 alt: umha imagem de exemplo
 colour: violet
 transEs: otro-post

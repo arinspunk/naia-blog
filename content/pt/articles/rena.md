@@ -1,6 +1,6 @@
 ---
 title: A rena
-img: cat.jpg
+img: thumbnail.jpg
 alt: umha imagem de exemplo
 colour: orange
 transEs: reno

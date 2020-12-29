@@ -10,7 +10,7 @@
         <time class="intro__text wrap__col wrap__col--4 wrap__col--right" :datetime="article.createdAt">{{ formatDate(article.createdAt,$i18n.locale) }}</time>
       </div>
       <div class="wrap__row">
-        <img class="article__img wrap__col wrap__col--4 lazyload" :data-src="require(`~/assets/images/${article.img}`)" :alt="article.alt" />
+        <img class="article__img wrap__col wrap__col--4 lazyload" :data-src="require(`~/assets/images/pages/${article.img}`)" :alt="article.alt" />
         <div class="wrap__col wrap__col--4 wrap__col--right">
           <div class="wrap__row">
             <div class="wrap__col wrap__col--3">
@@ -43,7 +43,7 @@ export default {
     async asyncData({ app, $content, params }) {
       const article = await $content(`${app.i18n.locale}/articles`, params.slug).fetch()
       const [prev, next] = await $content(`${app.i18n.locale}/articles`)
-      .only(['title', 'slug'])
+      .only(['title', 'slug', 'img', 'alt'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
       .fetch()
@@ -63,9 +63,9 @@ export default {
           { name: "author", content: "Naia & Zé" },
           { name: "description", property: "og:description", content: this.article.description, hid: "description" },
           { property: "og:title", content: this.article.title + ' – ' + this.$t('blogTitle') },
-          { property: "og:image", content: "/cat.jpg" },
+          { property: "og:image", content: require(`~/assets/images/pages/${this.article.img}`) },
           { name: "twitter:description", content: this.article.description },
-          { name: "twitter:image", content: require(`~/assets/images/${this.article.img}`) }
+          { name: "twitter:image", content: require(`~/assets/images/pages/${this.article.img}`) }
         ],
       };
     },

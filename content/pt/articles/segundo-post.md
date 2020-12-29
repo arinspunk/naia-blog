@@ -1,6 +1,6 @@
 ---
 title: O segundo post
-img: cat.jpg
+img: thumbnail.jpg
 alt: umha imagem de exemplo
 colour: pink
 transEs: segundo-post

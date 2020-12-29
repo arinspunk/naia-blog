@@ -1,6 +1,6 @@
 ---
 title: El reno
-img: cat.jpg
+img: thumbnail.jpg
 alt: umha imagem de exemplo
 colour: violet
 transPt: rena

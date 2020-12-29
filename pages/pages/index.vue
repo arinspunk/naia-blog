@@ -5,7 +5,7 @@
         {{ $t('pagesTitle') }} 
       </h1>
       <p class="intro__text wrap__col wrap__col--4 wrap__col--right">
-        {{ $t('pagesNumber', { number: articles.length }) }}
+        {{ $t('pagesNumber', { number: articles.length }) }} &#128523;
       </p>
     </div>
     <div class="articles wrap__row">

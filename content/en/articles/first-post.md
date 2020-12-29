@@ -1,6 +1,6 @@
 ---
 title: The first post
-img: cat.jpg
+img: thumbnail.jpg
 alt: un example image
 colour: violet
 transEs: primer-post

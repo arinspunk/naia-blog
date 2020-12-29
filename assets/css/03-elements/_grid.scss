@@ -10,6 +10,9 @@
         display: flex;
         flex-wrap: wrap;
         margin-right: -#{$gutter};
+        @media all and (max-width: 991px) {
+            margin-right: 0;
+        }
     }
     &__col {
         width: calc(16.667% - #{$gutter});
@@ -37,6 +40,9 @@
         }
         &--center {
             margin: 0 auto;
+        }
+        @media all and (max-width: 991px) {
+            width: 100%;
         }
     }
 }
