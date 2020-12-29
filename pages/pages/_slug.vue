@@ -27,6 +27,7 @@
 <script>
 export default {
     layout: 'post',
+    transition: 'post',
     methods: {
       formatDate(date,locale) {
         const options = { year: "numeric", month: "long", day: "numeric" };
@@ -77,6 +78,14 @@ export default {
     &__img {
       margin-bottom: 50px;
     }
+  }
+  .post-enter-active,
+  .post-leave-active {
+    transition: opacity 0.5s;
+  }
+  .post-enter,
+  .post-leave-to {
+    opacity: 0;
   }
 </style>
 
