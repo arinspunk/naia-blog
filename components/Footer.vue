@@ -20,13 +20,19 @@ export default {
 .footer {
   background: $white;
   background: var(--white);
-  margin-top: 170px;
+  margin-top: 120px;
   border-top: 1px solid;
   border-color: $black;
   border-color: var(--black);
+  @media screen and (min-width: $bp--laptop) {
+    margin-top: 170px;
+  }
   &__wrap {
-    height: 70px;
+    height: 50px;
     align-items: center;
+    @media screen and (min-width: $bp--laptop) {
+      height: 70px;
+    }
   }
 }
 </style>

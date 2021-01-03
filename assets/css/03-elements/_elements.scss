@@ -27,17 +27,23 @@ body {
     color: var(--black);
     margin: 0;
     padding: 0;
-    @media screen and (min-width: $bp--medium) {
+    @media screen and (min-width: $bp--tablet-v) {
         font-size: $p-size-m;
         font-size:  var(--p-size-m);
         line-height: $p-lh-m;
         line-height: var(--p-lh-m);
     }  
-    @media screen and (min-width: $bp--xlarge) {
+    @media screen and (min-width: $bp--laptop) {
         font-size: $p-size-l;
         font-size:  var(--p-size-l);
         line-height: $p-lh-l;
         line-height: var(--p-lh-l);
+    }  
+    @media screen and (min-width: $bp--desktop) {
+        font-size: $p-size-xl;
+        font-size:  var(--p-size-xl);
+        line-height: $p-lh-xl;
+        line-height: var(--p-lh-xl);
     }  
 }
 
@@ -62,17 +68,23 @@ h1 {
     font-size: var(--h1-size-s);
     line-height: $h1-lh-s;
     line-height: var(--h1-lh-s);
-    @media screen and (min-width: $bp--medium) {
+    @media screen and (min-width: $bp--tablet-v) {
         font-size: $h1-size-m;
         font-size: var(--h1-size-m);
         line-height: $h1-lh-m;
         line-height: var(--h1-lh-m);
     }   
-    @media screen and (min-width: $bp--xlarge) {
+    @media screen and (min-width: $bp--laptop) {
         font-size: $h1-size-l;
         font-size: var(--h1-size-l);
         line-height: $h1-lh-l;
         line-height: var(--h1-lh-l);
+    }  
+    @media screen and (min-width: $bp--desktop) {
+        font-size: $h1-size-xl;
+        font-size: var(--h1-size-xl);
+        line-height: $h1-lh-xl;
+        line-height: var(--h1-lh-xl);
     }  
 }
 
@@ -81,17 +93,23 @@ h2 {
     font-size: var(--h2-size-s);
     line-height: $h2-lh-s;
     line-height: var(--h2-lh-s);
-    @media screen and (min-width: $bp--medium) {
+    @media screen and (min-width: $bp--tablet-v) {
         font-size: $h2-size-m;
         font-size: var(--h2-size-m);
         line-height: $h2-lh-m;
         line-height: var(--h2-lh-m);
     }  
-    @media screen and (min-width: $bp--xlarge) {
+    @media screen and (min-width: $bp--laptop) {
         font-size: $h2-size-l;
         font-size: var(--h2-size-l);
         line-height: $h2-lh-l;
         line-height: var(--h2-lh-l);
+    }  
+    @media screen and (min-width: $bp--desktop) {
+        font-size: $h2-size-xl;
+        font-size: var(--h2-size-xl);
+        line-height: $h2-lh-xl;
+        line-height: var(--h2-lh-xl);
     }  
 }
 
@@ -99,13 +117,17 @@ h3, p, ul, ol {
     font-size: $p-size-s;
     font-size: var(--p-size-s);
     font-variant-ligatures: common-ligatures;
-    @media screen and (min-width: $bp--medium) {
+    @media screen and (min-width: $bp--tablet-v) {
         font-size: $p-size-m;
         font-size: var(--p-size-m);
     }  
-    @media screen and (min-width: $bp--xlarge) {
+    @media screen and (min-width: $bp--laptop) {
         font-size: $p-size-l;
         font-size: var(--p-size-l);
+    }  
+    @media screen and (min-width: $bp--desktop) {
+        font-size: $p-size-xl;
+        font-size: var(--p-size-xl);
     }  
     &:first-child {
         margin-top: 0;

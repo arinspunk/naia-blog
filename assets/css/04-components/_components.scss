@@ -3,10 +3,10 @@
 */
 .button {
     display: inline-block;
-    height: 70px;
+    height: 50px;
     font-family: $fonts-sans-alt;
     font-family: var(--fonts-sans-alt);
-    line-height: 70px;
+    line-height: 50px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-decoration: none;
@@ -14,8 +14,13 @@
     border-color: $black;
     border-color: var(--black);
     border-radius: $bu;
-    padding: 0 30px;
+    padding: 0 20px;
     transition: .3s ease;
+    @media screen and (min-width: $bp--tablet-v) {
+        height: 70px;
+        line-height: 70px;
+        padding: 0 30px;
+    }
     &:hover {
         background-color: $black;
         background-color: var(--black);
@@ -25,8 +30,11 @@
 }
 .intro {
     &__title {
-        margin-top: 221px;
+        margin-top: 183px;
         margin-bottom: 14px;
+        @media screen and (min-width: $bp--laptop) {
+            margin-top: 221px;
+        }
         &.red {
             color: $red;
             color: var(--red);
@@ -62,7 +70,10 @@
     }
     &__text {
         margin-top: 0;
-        margin-bottom: 120px;
+        margin-bottom: 53px;
+        @media screen and (min-width: $bp--laptop) {
+            margin-bottom: 120px;
+        }
     }
 }
 .nav {
@@ -71,10 +82,17 @@
     margin: 0;
     &__item {
         display: inline-block;
-        margin-right: 30px;
+        margin-right: 0;
+        @media screen and (min-width: $bp--tablet-v) {
+            margin-right: 30px;
+        }
     }
     &__link {
         text-decoration: none;
+        margin-left: 10px;
+        @media screen and (min-width: $bp--tablet-v) {
+            margin-left: 0;
+        }
     }
 }
 .page-enter-active,
@@ -83,5 +101,13 @@
 }
 .page-enter,
 .page-leave-to {
+  opacity: 0;
+}
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;
+}
+.layout-enter,
+.layout-leave-to {
   opacity: 0;
 }

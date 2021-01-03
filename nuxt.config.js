@@ -101,7 +101,7 @@ export default {
         ]
     },
     plugins: [
-    '~/plugins/lazysizes.client.js'
+        '~/plugins/lazysizes.client.js'
     ],
     build: {
         extend (config, { isDev, isClient, loaders: { vue } }) {

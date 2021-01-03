@@ -7,7 +7,7 @@
         class="next-prev__link next-prev__link--prev wrap__col wrap__col--3 wrap__col--left"
         :title="prev.title"
       >
-        <img :data-src="require(`~/assets/images/pages/${prev.img}`)" :alt="prev.alt" class="next-prev__img lazyload" /> <svg width="216" height="132" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.4 66.707l63.085 63.085-1.415 1.414L.293 66.428a1 1 0 010-1.414L65.307 0l1.414 1.414L3.428 64.707H200v2H3.4z" fill="#000"/></svg>
+        <img :data-src="require(`~/assets/images/pages/${prev.img}`)" :alt="prev.alt" class="next-prev__img lazyload" /> <img :data-src="require(`~/assets/images/arrow-left.svg`)" alt="" class="next-prev__link-arrow lazyload" /> <span class="next-prev__link-text">{{ prev.title }}</span>
       </NuxtLink>
       <NuxtLink
         v-if="next"
@@ -15,7 +15,7 @@
         class="next-prev__link next-prev__link--next wrap__col wrap__col--3 wrap__col--right"
         :title="next.title"
       >
-        <svg width="200" height="132" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M196.6 64.499L133.515 1.414 134.929 0l64.778 64.778a1 1 0 010 1.414l-65.014 65.014-1.414-1.414 63.293-63.293H0v-2h196.6z" fill="#000"/></svg> <img :data-src="require(`~/assets/images/pages/${next.img}`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" />
+        <span class="next-prev__link-text">{{ next.title }}</span> <img :data-src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right lazyload" /> <img :data-src="require(`~/assets/images/pages/${next.img}`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" />
       </NuxtLink>
     </div>
   </div>
@@ -38,21 +38,76 @@
 
 <style scoped lang="scss">
   .next-prev {
-    margin-top: 180px;
+    margin-top: 106px;
+    padding: 0;
+    @media screen and (min-width: $bp--tablet-h) {
+      margin-top: 180px;
+      padding: 0 #{$gutter / 2};
+    }
+    @media screen and (min-width: $bp--laptop) {
+      padding: 0 #{$gutter};
+    }
     &__link {
       display: flex;
-      justify-content: center;
       align-items: center;
+      text-decoration: none;
+      transform: translateX(calc(-50% - 0px));
+      @media screen and (min-width: $bp--tablet-h) {
+        transform: none;
+      }
       &--next {
         text-align: right;
+        justify-content: right;
+        transform: translateX(calc(50% + 20px));
+        @media screen and (min-width: $bp--tablet-h) {
+          transform: none;
+        }
+      }
+    }
+    &__link-text {
+      display: none;
+      @media screen and (min-width: $bp--tablet-v) {
+        display: inline-block;
+      }
+    }
+    &__link-arrow {
+      position: relative;
+      top: 2px;
+      max-width: 37px;
+      margin: 0 20px 0 0;
+      opacity: .3;
+      &--right {
+        margin: 0 0 0 20px;
       }
     }
     &__img {
-      max-width: 200px;
+      max-width: 160px;
       border-radius: 100%;
-      margin: 0 40px 0 0;
+      margin: 0 20px 0 0;
+      @media screen and (min-width: $bp--tablet-h) {
+        max-width: 200px;
+        margin: 0 20px 0 0;
+      }
       &--right {
-        margin: 0 0 0 40px;
+        margin: 0 0 0 20px;
+        @media screen and (min-width: $bp--tablet-h) {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+    .wrap__row {
+      overflow: hidden;
+      margin-right: 0;
+      @media screen and (min-width: $bp--laptop) {
+        margin-right: -#{$gutter};
+      }
+    }
+    .wrap__col--3 {
+      width: calc(50% - #{$gutter / 2});
+      margin-right: $gutter / 2;
+      @media screen and (min-width: $bp--laptop) {
+        width: calc(50% - #{$gutter});
+        margin-right: $gutter;
       }
     }
   }

@@ -27,7 +27,6 @@
 <script>
 export default {
     layout: 'post',
-    transition: 'post',
     methods: {
       formatDate(date,locale) {
         const options = { year: "numeric", month: "long", day: "numeric" };
@@ -76,16 +75,13 @@ export default {
 <style scoped lang="scss">
   .article {
     &__img {
-      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-bottom: 37px;
+      @media screen and (min-width: $bp--tablet-h) {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
     }
-  }
-  .post-enter-active,
-  .post-leave-active {
-    transition: opacity 0.5s;
-  }
-  .post-enter,
-  .post-leave-to {
-    opacity: 0;
   }
 </style>
 
