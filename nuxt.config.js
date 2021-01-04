@@ -1,5 +1,6 @@
 const builtAt = new Date().toISOString()
 export default {
+    target: 'static', // default is 'server'
     components: true,
     modules: [
         '@nuxt/content',
