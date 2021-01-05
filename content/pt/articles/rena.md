@@ -1,5 +1,6 @@
 ---
 title: A rena
+date: 2020-12-25
 img: thumbnail.jpg
 alt: umha imagem de exemplo
 colour: orange

@@ -22,8 +22,8 @@
   export default {
     async asyncData({ app, $content, params }) {
       const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
-        .only(["title", "description", "slug", "img"])
-        .sortBy("createdAt", "desc")
+        .only(["slug", "img"])
+        .sortBy("date", "desc")
         .fetch();
       return {
         articles

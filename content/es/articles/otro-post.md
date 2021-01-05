@@ -1,5 +1,6 @@
 ---
 title: ¡Otro post más!
+date: 2020-12-22
 img: thumbnail.jpg
 alt: una imagen de ejemplo
 colour: violet

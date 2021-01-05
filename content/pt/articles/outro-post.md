@@ -1,5 +1,6 @@
 ---
 title: Mais outro post!
+date: 2020-12-22
 img: thumbnail.jpg
 alt: umha imagem de exemplo
 colour: violet

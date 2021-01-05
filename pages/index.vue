@@ -39,7 +39,7 @@
     async asyncData({ app, $content, params }) {
       const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
         .only(["slug", "img"])
-        .sortBy("createdAt", "desc")
+        .sortBy("date", "desc")
         .limit(2)
         .fetch();
       return {

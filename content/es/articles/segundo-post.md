@@ -1,5 +1,6 @@
 ---
 title: El segundo post
+date: 2020-12-21
 img: thumbnail.jpg
 alt: una imagen de ejemplo
 colour: violet

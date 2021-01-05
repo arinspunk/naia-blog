@@ -1,5 +1,6 @@
 ---
 title: The first post
+date: 2020-12-20
 img: thumbnail.jpg
 alt: un example image
 colour: violet
