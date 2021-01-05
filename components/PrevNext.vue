@@ -60,11 +60,12 @@
         transform: none;
       }
       &--next {
-        text-align: right;
-        justify-content: right;
+        justify-content: center;
         transform: translateX(calc(50% + 20px));
         margin-left: auto;
         @media screen and (min-width: $bp--tablet-h) {
+          text-align: right;
+          justify-content: right;
           transform: none;
         }
       }
