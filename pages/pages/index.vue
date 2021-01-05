@@ -57,7 +57,7 @@
 
 <style scoped lang="scss">
   .articles {
-    .wrap__row {
+    &.wrap__row {
       margin-right: -#{$gutter / 2};
       @media screen and (min-width: $bp--laptop) {
         margin-right: -#{$gutter};
