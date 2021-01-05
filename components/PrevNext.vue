@@ -1,22 +1,26 @@
 <template>
   <div class="next-prev wrap">
     <div class="wrap__row">
-      <NuxtLink
-        v-if="prev"
-        :to="localePath({ name: 'pages-slug', params: { slug: prev.slug } })"
-        class="next-prev__link next-prev__link--prev wrap__col wrap__col--3 wrap__col--left"
-        :title="prev.title"
-      >
-        <img :data-src="require(`~/assets/images/pages/${prev.img}-m-2x.jpg`)" :alt="prev.alt" class="next-prev__img lazyload" /> <img :data-src="require(`~/assets/images/arrow-left.svg`)" alt="" class="next-prev__link-arrow lazyload" /> <span class="next-prev__link-text">{{ prev.title }}</span>
-      </NuxtLink>
-      <NuxtLink
-        v-if="next"
-        :to="localePath({ name: 'pages-slug', params: { slug: next.slug } })"
-        class="next-prev__link next-prev__link--next wrap__col wrap__col--3 wrap__col--right"
-        :title="next.title"
-      >
-        <span class="next-prev__link-text">{{ next.title }}</span> <img :data-src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right lazyload" /> <img :data-src="require(`~/assets/images/pages/${next.img}-m-2x.jpg`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" />
-      </NuxtLink>
+      <div class="wrap__col wrap__col--3 wrap__col--left">
+        <NuxtLink
+          v-if="prev"
+          :to="localePath({ name: 'pages-slug', params: { slug: prev.slug } })"
+          class="next-prev__link next-prev__link--prev"
+          :title="prev.title"
+        >
+          <img :data-src="require(`~/assets/images/pages/${prev.img}-m-2x.jpg`)" :alt="prev.alt" class="next-prev__img lazyload" /> <img :data-src="require(`~/assets/images/arrow-left.svg`)" alt="" class="next-prev__link-arrow lazyload" /> <span class="next-prev__link-text">{{ prev.title }}</span>
+        </NuxtLink>
+      </div>
+      <div class="wrap__col wrap__col--3 wrap__col--right">
+        <NuxtLink
+          v-if="next"
+          :to="localePath({ name: 'pages-slug', params: { slug: next.slug } })"
+          class="next-prev__link next-prev__link--next"
+          :title="next.title"
+        >
+          <span class="next-prev__link-text">{{ next.title }}</span> <img :data-src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right lazyload" /> <img :data-src="require(`~/assets/images/pages/${next.img}-m-2x.jpg`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" />
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
