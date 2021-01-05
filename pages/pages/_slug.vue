@@ -10,7 +10,9 @@
         <time class="intro__text wrap__col wrap__col--4 wrap__col--right" :datetime="article.date">{{ formatDate(article.date,$i18n.locale) }}</time>
       </div>
       <div class="wrap__row">
-        <img class="article__img wrap__col wrap__col--4 lazyload" :data-src="require(`~/assets/images/pages/${article.img}-2x.jpg`)" :alt="article.alt" />
+        <div class="wrap__col wrap__col--4">
+          <img class="article__img lazyload" :data-src="require(`~/assets/images/pages/${article.img}-2x.jpg`)" :alt="article.alt" />
+        </div>
         <div class="wrap__col wrap__col--4 wrap__col--right">
           <div class="wrap__row">
             <div class="wrap__col wrap__col--3">
