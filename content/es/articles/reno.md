@@ -1,7 +1,7 @@
 ---
 title: El reno
-date: 2020-12-25
-img: thumbnail.jpg
+date: 2020-11-23
+img: rena
 alt: umha imagem de exemplo
 colour: violet
 transPt: rena
