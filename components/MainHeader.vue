@@ -4,8 +4,12 @@
       <div class="header__logo wrap__col wrap__col--2">
         <span
           v-if="this.$route.name == 'index___pt' || this.$route.name == 'index___es' || this.$route.name == 'index___en'"
-        >Sem link</span>
-        <NuxtLink v-else class="nav__link" :to="localePath('/')">Com link</NuxtLink>
+        >
+          <img data-src="/logo.jpg" alt="" class="header__logo-img lazyload" />
+        </span>
+        <NuxtLink v-else class="header__logo-link" :to="localePath('/')">
+          <img data-src="/logo.jpg" alt="" class="header__logo-img lazyload" />
+        </NuxtLink>
       </div>
       <ul class="nav wrap__col wrap__col--2">
         <li class="nav__item">
@@ -83,8 +87,19 @@
     z-index: 999;
     &__logo {
       position: absolute;
-      top: 5px;
+      top: 7px;
       left: 0;
+      max-width: 68px;
+      @media screen and (min-width: $bp--tablet-v) {
+        max-width: 80px;
+      }
+      @media screen and (min-width: $bp--laptop) {
+        max-width: 100px;
+      }
+      @media screen and (min-width: $bp--desktop) {
+        max-width: 110px;
+        top: 11px;
+      }
     }
     &__wrap {
       position: relative;
