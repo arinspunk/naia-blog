@@ -13,7 +13,7 @@
       </div>
       <ul
         v-if="this.$route.name == 'slug___pt' || this.$route.name == 'slug___es' || this.$route.name == 'slug___en'"
-        class="languages nav wrap__col wrap__col--4"
+        class="header__languages nav wrap__col wrap__col--4"
       >
         <li v-if="$i18n.locale !== 'pt'" class="nav__item">
           <NuxtLink v-if="article.transPt == undefined" class="nav__link gl" to="/">
@@ -40,7 +40,7 @@
           </NuxtLink>
         </li>
       </ul>
-      <ul v-else class="languages nav wrap__col wrap__col--4">
+      <ul v-else class="header__languages nav wrap__col wrap__col--4">
         <li v-if="$i18n.locale !== 'pt'" class="nav__item">
           <NuxtLink class="nav__link gl" :to="switchLocalePath('pt')">
             Galego
@@ -80,27 +80,10 @@
     background: $white;
     background: var(--white);
     z-index: 999;
-    &__logo {}
-    &__logo-link {
-      display: block;
-    }
-    &__logo-img {
-      max-width: 68px;
-      @media screen and (min-width: $bp--tablet-v) {
-        max-width: 80px;
-      }
-      @media screen and (min-width: $bp--laptop) {
-        max-width: 100px;
-      }
-      @media screen and (min-width: $bp--desktop) {
-        max-width: 110px;
-      }
-    }
     &__wrap {
       position: relative;
       top: -3px;
       height: 40px;
-      align-items: center;
       @media screen and (min-width: $bp--tablet-v) {
         height: 45px;
       }
@@ -112,23 +95,28 @@
         height: 65px;
       }
     }
-    .wrap__row {
-      margin-right: -#{$gutter / 2};
-      justify-content: flex-end;
+    &__logo-link {
+      display: block;
+    }
+    &__logo-img {
+      max-width: 68px;
       @media screen and (min-width: $bp--tablet-v) {
-        margin-right: -#{$gutter};
+        max-width: 80px;
+      }
+      @media screen and (min-width: $bp--laptop) {
+        max-width: 85px;
+      }
+      @media screen and (min-width: $bp--desktop) {
+        max-width: 100px;
       }
     }
-    .wrap__col--2 {
-      width: auto;
-      margin-right: $gutter / 2;
-      @media screen and (min-width: $bp--tablet-v) {
-        width: calc(33.333% - #{$gutter});
-        margin-right: $gutter;
-      }
+    &__languages {
+      opacity: 0.4;
     }
-  }
-  .languages {
-    opacity: 0.5;
+    &__logo,
+    &__languages {
+      display: flex;
+      align-items: center;
+    }
   }
 </style>
