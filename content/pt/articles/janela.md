@@ -8,4 +8,4 @@ transEs: ventana
 transEn: window
 ---
 
-Ficara sentada à mesa a ler o Diário de Notícias, no seu roupão de manhã de fazenda preta, bordado a sutache, com largos botões de madrepérola; o cabelo louro um pouco desmanchado, com um tom seco do calor do travesseiro, enrolava-se, torcido no alto da cabeça pequenina.
+Esta é a janela da casa dos monstros. Por ela podem ver cousas de monstros e outros monstros. Um deles está assustado porque está a ver umha jirafa das que comen carne… e monstros! 
