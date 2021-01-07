@@ -109,7 +109,7 @@
       width: calc(50% - #{$gutter / 2});
       margin-right: $gutter / 2;
       @media screen and (min-width: $bp--laptop) {
-        width: calc(50% - #{$gutter});
+        width: calc(33.333% - #{$gutter});
         margin-right: $gutter;
       }
     }
