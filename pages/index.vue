@@ -15,7 +15,7 @@
     <div class="articles">
       <div class="wrap__row">
         <h2 class="articles__title wrap__col wrap__col--4 wrap__col--right">
-          {{ $t('lastPages') }}
+          {{ $t('pagesNumber', { number: articles.length }) }} &#128523;
         </h2>
       </div>
       <div class="wrap__row">
@@ -24,11 +24,6 @@
           :key="article.name"
           :article="article"
         />
-        <div class="articles__link-wrap wrap__col wrap__col--2 text-center">
-          <NuxtLink :to="localePath('/pages/')" class="articles__link button">
-            {{ $t('seeAll') }}
-          </NuxtLink>
-        </div>
       </div>
     </div>
   </main>
@@ -40,7 +35,6 @@
       const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
         .only(["slug", "img"])
         .sortBy("date", "desc")
-        .limit(2)
         .fetch();
       return {
         articles
@@ -73,17 +67,6 @@
       @media screen and (min-width: $bp--tablet-h) {
         margin-top: 45px;
         margin-bottom: 80px;
-      }
-    }
-    &__link-wrap {
-      margin-top: 25px;
-      width: 100%;
-      @media screen and (min-width: $bp--tablet-h) {
-        margin-top: 0;
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
     }
     .wrap__row {

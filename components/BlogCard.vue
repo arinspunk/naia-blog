@@ -1,7 +1,7 @@
 <template>
   <article class="article wrap__col wrap__col--2">
     <NuxtLink
-      :to="localePath({ name: 'pages-slug', params: { slug: article.slug } })"
+      :to="localePath({ name: 'slug', params: { slug: article.slug } })"
       class="article__link"
     >
       <img :data-src="require(`~/assets/images/pages/${article.img}-m-2x.jpg`)" :alt="article.alt" class="article__img lazyload" />

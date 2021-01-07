@@ -1,20 +1,20 @@
 <template>
   <div class="next-prev wrap">
     <div class="wrap__row">
-      <div class="wrap__col wrap__col--3 wrap__col--left">
+      <div class="wrap__col wrap__col--2 wrap__col--right">
         <NuxtLink
           v-if="prev"
-          :to="localePath({ name: 'pages-slug', params: { slug: prev.slug } })"
+          :to="localePath({ name: 'slug', params: { slug: prev.slug } })"
           class="next-prev__link next-prev__link--prev"
           :title="prev.title"
         >
           <img :data-src="require(`~/assets/images/pages/${prev.img}-m-2x.jpg`)" :alt="prev.alt" class="next-prev__img lazyload" /> <img :data-src="require(`~/assets/images/arrow-left.svg`)" alt="" class="next-prev__link-arrow lazyload" /> <span class="next-prev__link-text">{{ prev.title }}</span>
         </NuxtLink>
       </div>
-      <div class="wrap__col wrap__col--3 wrap__col--right">
+      <div class="wrap__col wrap__col--2">
         <NuxtLink
           v-if="next"
-          :to="localePath({ name: 'pages-slug', params: { slug: next.slug } })"
+          :to="localePath({ name: 'slug', params: { slug: next.slug } })"
           class="next-prev__link next-prev__link--next"
           :title="next.title"
         >

@@ -11,20 +11,15 @@
           <img data-src="/logo.jpg" alt="" class="header__logo-img lazyload" />
         </NuxtLink>
       </div>
-      <ul class="nav wrap__col wrap__col--2">
-        <li class="nav__item">
-          <NuxtLink class="nav__link" :to="localePath('pages')">{{ $t('pagesTitle') }}</NuxtLink>
-        </li>
-      </ul>
       <ul
-        v-if="this.$route.name == 'pages-slug___pt' || this.$route.name == 'pages-slug___es' || this.$route.name == 'pages-slug___en'"
-        class="languages nav wrap__col wrap__col--2"
+        v-if="this.$route.name == 'slug___pt' || this.$route.name == 'slug___es' || this.$route.name == 'slug___en'"
+        class="languages nav wrap__col wrap__col--4"
       >
         <li v-if="$i18n.locale !== 'pt'" class="nav__item">
           <NuxtLink v-if="article.transPt == undefined" class="nav__link gl" to="/">
             Galego
           </NuxtLink>
-          <NuxtLink v-else class="nav__link gl" :to="`/pages/${article.transPt}`">
+          <NuxtLink v-else class="nav__link gl" :to="`/${article.transPt}`">
             Galego
           </NuxtLink>
         </li>
@@ -32,7 +27,7 @@
           <NuxtLink v-if="article.transEn == undefined" class="nav__link en" to="/en">
             English
           </NuxtLink>
-          <NuxtLink v-else class="nav__link en" :to="`/en/pages/${article.transEn}`">
+          <NuxtLink v-else class="nav__link en" :to="`/en/${article.transEn}`">
             English
           </NuxtLink>
         </li>
@@ -40,12 +35,12 @@
           <NuxtLink v-if="article.transEs == undefined" class="nav__link es" to="/es">
             Español
           </NuxtLink>
-          <NuxtLink v-else class="nav__link es" :to="`/es/pages/${article.transEs}`">
+          <NuxtLink v-else class="nav__link es" :to="`/es/${article.transEs}`">
             Español
           </NuxtLink>
         </li>
       </ul>
-      <ul v-else class="languages nav wrap__col wrap__col--2">
+      <ul v-else class="languages nav wrap__col wrap__col--4">
         <li v-if="$i18n.locale !== 'pt'" class="nav__item">
           <NuxtLink class="nav__link gl" :to="switchLocalePath('pt')">
             Galego
@@ -85,10 +80,11 @@
     background: $white;
     background: var(--white);
     z-index: 999;
-    &__logo {
-      position: absolute;
-      top: 7px;
-      left: 0;
+    &__logo {}
+    &__logo-link {
+      display: block;
+    }
+    &__logo-img {
       max-width: 68px;
       @media screen and (min-width: $bp--tablet-v) {
         max-width: 80px;
@@ -98,7 +94,6 @@
       }
       @media screen and (min-width: $bp--desktop) {
         max-width: 110px;
-        top: 11px;
       }
     }
     &__wrap {
