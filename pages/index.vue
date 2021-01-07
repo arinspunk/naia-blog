@@ -78,7 +78,7 @@
     .wrap__col--2 {
       width: calc(50% - #{$gutter / 2});
       margin-right: $gutter / 2;
-      &:last-child {
+      &:first-child {
         width: 100%;
         @media screen and (min-width: $bp--tablet-h) {
           width: calc(33.333% - #{$gutter});

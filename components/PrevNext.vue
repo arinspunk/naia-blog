@@ -43,10 +43,9 @@
 <style scoped lang="scss">
   .next-prev {
     margin-top: 106px;
-    padding: 0;
+    padding: 0 #{$gutter / 2};
     @media screen and (min-width: $bp--tablet-h) {
       margin-top: 180px;
-      padding: 0 #{$gutter / 2};
     }
     @media screen and (min-width: $bp--laptop) {
       padding: 0 #{$gutter};
@@ -55,18 +54,12 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      transform: translateX(calc(-50% - 0px));
       @media screen and (min-width: $bp--tablet-h) {
-        transform: none;
       }
       &--next {
-        justify-content: center;
-        transform: translateX(calc(50% - 20px));
-        margin-left: auto;
+        justify-content: flex-end;
         @media screen and (min-width: $bp--tablet-h) {
           text-align: right;
-          justify-content: right;
-          transform: none;
         }
       }
     }
@@ -75,40 +68,44 @@
       @media screen and (min-width: $bp--tablet-v) {
         display: inline-block;
       }
+      @media screen and (min-width: $bp--tablet-h) {
+        :hover > & {
+          opacity: .5;
+        }
+      }
     }
     &__link-arrow {
       position: relative;
       top: 2px;
-      max-width: 37px;
-      margin: 0 20px 0 0;
-      opacity: .3;
+      max-width: 19px;
+      margin: 0 15px 0 0;
       &--right {
-        margin: 0 0 0 20px;
+        margin: 0 0 0 15px;
       }
     }
     &__img {
       max-width: 160px;
       border-radius: 100%;
-      margin: 0 20px 0 0;
+      margin: 0 25px 0 0;
       @media screen and (min-width: $bp--tablet-h) {
         max-width: 200px;
-        margin: 0 20px 0 0;
+        margin: 0 25px 0 0;
       }
       &--right {
-        margin: 0 0 0 20px;
+        margin: 0 0 0 25px;
         @media screen and (min-width: $bp--tablet-h) {
-          margin: 0 0 0 20px;
+          margin: 0 0 0 25px;
         }
       }
     }
     .wrap__row {
       overflow: hidden;
-      margin-right: 0;
+      margin-right: -#{$gutter / 2};
       @media screen and (min-width: $bp--laptop) {
         margin-right: -#{$gutter};
       }
     }
-    .wrap__col--3 {
+    .wrap__col--2 {
       width: calc(50% - #{$gutter / 2});
       margin-right: $gutter / 2;
       @media screen and (min-width: $bp--laptop) {
