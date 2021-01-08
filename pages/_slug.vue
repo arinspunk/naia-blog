@@ -23,6 +23,13 @@
       </div>  
     </article>
     <prev-next :prev="prev" :next="next" />
+    <div class="intro wrap__row">
+      <div class="wrap__col wrap__col--4 wrap__col--right text-center">
+        <NuxtLink :to="localePath('/')" class="button">
+          {{ $t('seeAll') }}
+        </NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -85,6 +92,12 @@ export default {
         margin-bottom: 50px;
       }
     }
+  }
+  .button {
+    margin-top: 60px;
+    @media screen and (min-width: $bp--tablet-h) {
+        margin-top: 100px;
+      }
   }
 </style>
 
