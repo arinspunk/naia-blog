@@ -123,14 +123,5 @@
         margin-right: $gutter;
       }
     }
-    .layout-enter-active &,
-    .layout-leave-active & {
-      transition: ease 0.5s;
-    }
-    .layout-enter &,
-    .layout-leave-to & {
-      opacity: 0;
-      transform: translateY(50px);
-    }
   }
 </style>
