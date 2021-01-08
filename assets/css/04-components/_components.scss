@@ -97,17 +97,19 @@
 }
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.5s;
+  transition: ease 0.5s;
 }
 .page-enter,
 .page-leave-to {
   opacity: 0;
+  transform: translateX(-100px);
 }
 .layout-enter-active,
 .layout-leave-active {
-  transition: opacity 0.5s;
+  transition: ease 0.5s;
 }
 .layout-enter,
 .layout-leave-to {
   opacity: 0;
+  transform: translateX(-100px);
 }
