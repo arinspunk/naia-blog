@@ -50,9 +50,9 @@
           { name: "author", content: "Naia & Zé" },
           { name: "description", property: "og:description", content: this.$t("blogIntro"), hid: "description" },
           { property: "og:title", content: this.$t("blogTitle") },
-          { property: "og:image", content: "/cat.jpg" },
+          { property: "og:image", content: "/naia-ze-og.jpg" },
           { name: "twitter:description", content: this.$t("blogIntro") },
-          { name: "twitter:image", content: "/cat.jpg" }
+          { name: "twitter:image", content: "/naia-ze-tw.jpg" }
         ],
       };
     },
