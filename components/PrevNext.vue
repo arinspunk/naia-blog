@@ -18,7 +18,7 @@
           class="next-prev__link next-prev__link--next"
           :title="next.title"
         >
-          <span class="next-prev__link-text">{{ $t('next') }}</span> <img :data-src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right lazyload" /> <img :data-src="require(`~/assets/images/pages/${next.img}-m-2x.jpg`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" />
+          <img :data-src="require(`~/assets/images/pages/${next.img}-m-2x.jpg`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" /> <span class="next-prev__link-text">{{ $t('next') }}</span> <img :data-src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right lazyload" />
         </NuxtLink>
       </div>
     </div>
@@ -42,7 +42,7 @@
 
 <style scoped lang="scss">
   .next-prev {
-    margin-top: 106px;
+    margin-top: 113px;
     padding: 0 #{$gutter / 2};
     @media screen and (min-width: $bp--tablet-h) {
       margin-top: 180px;
@@ -51,23 +51,21 @@
       padding: 0 #{$gutter};
     }
     &__link {
-      display: flex;
-      align-items: center;
+      display: block;
       text-decoration: none;
       @media screen and (min-width: $bp--tablet-h) {
+        display: flex;
+        align-items: center;
       }
       &--next {
-        justify-content: flex-end;
+        text-align: right;
         @media screen and (min-width: $bp--tablet-h) {
-          text-align: right;
+          justify-content: flex-end;
         }
       }
     }
     &__link-text {
-      display: none;
-      @media screen and (min-width: $bp--tablet-v) {
         display: inline-block;
-      }
       @media screen and (min-width: $bp--tablet-h) {
         :hover > & {
           opacity: .5;
@@ -76,23 +74,35 @@
     }
     &__link-arrow {
       position: relative;
-      top: 2px;
-      max-width: 19px;
-      margin: 0 15px 0 0;
+      top: 0px;
+      max-width: 16px;
+      margin: 0 5px 0 0;
+      display: inline-block;
+      @media screen and (min-width: $bp--tablet-h) {
+        top: 2px;
+        margin: 0 15px 0 0;
+        max-width: 19px;
+      }
       &--right {
-        margin: 0 0 0 15px;
+        margin: 0 0 0 5px;
+        @media screen and (min-width: $bp--tablet-h) {
+          margin: 0 0 0 15px;
+        }
       }
     }
     &__img {
       max-width: 160px;
-      border-radius: 100%;
-      margin: 0 25px 0 0;
+      margin: 0 0 7px 0;
+      @media screen and (min-width: $bp--tablet-v) {
+        border-radius: 100%;
+      }
       @media screen and (min-width: $bp--tablet-h) {
         max-width: 200px;
         margin: 0 25px 0 0;
       }
       &--right {
-        margin: 0 0 0 25px;
+        margin: 0 0 7px 0;
+        order: 3;
         @media screen and (min-width: $bp--tablet-h) {
           margin: 0 0 0 25px;
         }
