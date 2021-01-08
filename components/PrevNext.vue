@@ -47,7 +47,7 @@
     @media screen and (min-width: $bp--tablet-h) {
       margin-top: 180px;
     }
-    @media screen and (min-width: $bp--laptop) {
+    @media screen and (min-width: $bp--tablet-h) {
       padding: 0 #{$gutter};
     }
     &__link {

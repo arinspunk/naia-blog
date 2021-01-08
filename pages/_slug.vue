@@ -23,13 +23,7 @@
       </div>  
     </article>
     <prev-next :prev="prev" :next="next" />
-    <div class="intro wrap__row">
-      <div class="wrap__col wrap__col--4 wrap__col--right text-center">
-        <NuxtLink :to="localePath('/')" class="button">
-          {{ $t('seeAll') }}
-        </NuxtLink>
-      </div>
-    </div>
+    <back-button />
   </div>
 </template>
 
@@ -42,13 +36,6 @@ export default {
         return new Date(date).toLocaleDateString(locale, options);
       }
     },
-    // nuxtI18n: {
-    //   paths: {
-    //     en: '/pages/:slug',
-    //     es: '/paginas/:slug',
-    //     pt: '/paginas/:slug',
-    //   }
-    // },
     async asyncData({ app, $content, params }) {
       const article = await $content(`${app.i18n.locale}/articles`, params.slug).fetch()
       const [prev, next] = await $content(`${app.i18n.locale}/articles`)
@@ -88,16 +75,10 @@ export default {
       margin-bottom: 37px;
       border: 1px solid #f3f3f3;
       @media screen and (min-width: $bp--tablet-h) {
-        margin-top: 0;
+        margin-top: 45px;
         margin-bottom: 50px;
       }
     }
-  }
-  .button {
-    margin-top: 83px;
-    @media screen and (min-width: $bp--tablet-h) {
-        margin-top: 103px;
-      }
   }
 </style>
 
