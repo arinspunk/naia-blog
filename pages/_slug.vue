@@ -94,9 +94,9 @@ export default {
     }
   }
   .button {
-    margin-top: 60px;
+    margin-top: 83px;
     @media screen and (min-width: $bp--tablet-h) {
-        margin-top: 100px;
+        margin-top: 103px;
       }
   }
 </style>
