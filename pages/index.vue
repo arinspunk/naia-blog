@@ -95,5 +95,15 @@
         margin-right: $gutter;
       }
     }
+    @include transition-active {
+      transition: .4s ease;
+    }
+    @include transition {
+      opacity: 0;
+      transform: translateY(50px);
+      @media screen and (min-width: $bp--tablet-v) {
+        transform: translateY(100px);
+      }
+    }
   }
 </style>

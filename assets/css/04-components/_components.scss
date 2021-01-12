@@ -67,12 +67,32 @@
             color: $pink;
             color: var(--pink);
         }
+        @include transition-active {
+            transition: .4s ease;
+        }
+        @include transition {
+            opacity: 0;
+            transform: translateX(50px);
+            @media screen and (min-width: $bp--tablet-v) {
+                transform: translateX(100px);
+            }
+        }
     }
     &__text {
         margin-top: 0;
         margin-bottom: 53px;
         @media screen and (min-width: $bp--laptop) {
             margin-bottom: 120px;
+        }
+        @include transition-active {
+            transition: .4s ease .1s;
+        }
+        @include transition {
+            opacity: 0;
+            transform: translateX(50px);
+            @media screen and (min-width: $bp--tablet-v) {
+                transform: translateX(100px);
+            }
         }
     }
 }
@@ -96,26 +116,8 @@
     }
 }
 .page-enter-active,
-.page-leave-active {
-  transition: ease 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-  transform: translateX(50px);
-  @media screen and (min-width: $bp--tablet-h) {
-    transform: translateX(100px);
-  }
-}
+.page-leave-active,
 .layout-enter-active,
 .layout-leave-active {
   transition: ease 0.5s;
-}
-.layout-enter,
-.layout-leave-to {
-  opacity: 0;
-  transform: translateX(50px);
-  @media screen and (min-width: $bp--tablet-h) {
-    transform: translateX(100px);
-  }
 }

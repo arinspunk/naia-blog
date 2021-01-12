@@ -15,7 +15,7 @@
         </div>
         <div class="wrap__col wrap__col--4 wrap__col--right">
           <div class="wrap__row">
-            <div class="wrap__col wrap__col--3">
+            <div class="wrap__col wrap__col--3 article__text">
               <nuxt-content :document="article" />
             </div>
           </div>
@@ -77,6 +77,24 @@ export default {
       @media screen and (min-width: $bp--tablet-h) {
         margin-top: 45px;
         margin-bottom: 50px;
+      }
+      @include transition-active {
+        transition: .4s ease .2s;
+      }
+      @include transition {
+        opacity: 0;
+      }
+    }
+    &__text {
+      @include transition-active {
+        transition: .4s ease .1s;
+      }
+      @include transition {
+        opacity: 0;
+        transform: translateX(50px);
+        @media screen and (min-width: $bp--tablet-v) {
+            transform: translateX(100px);
+        }
       }
     }
   }
