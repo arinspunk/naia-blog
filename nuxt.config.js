@@ -1,6 +1,6 @@
 const builtAt = new Date().toISOString()
 export default {
-    target: 'static', // default is 'server'
+    target: 'static',
     components: true,
     modules: [
         '@nuxt/content',
@@ -61,19 +61,6 @@ export default {
                 }
             }
         },
-        // parsePages: false,
-        // pages: {
-        //     'pages/index': {
-        //         en: '/pages',
-        //         es: '/paginas',
-        //         pt: '/paginas'
-        //     },
-        //     // 'pages/_slug': {
-        //     //     en: '/pages/*',
-        //     //     es: '/paginas/*',
-        //     //     pt: '/paginas/*'
-        //     // }
-        // }
     },
     head: {
         title: 'My Notebook',
