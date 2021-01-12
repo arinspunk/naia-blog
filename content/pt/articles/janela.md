@@ -1,6 +1,7 @@
 ---
 title: A janela
 date: 2020-12-21
+description: Esta é a janela da casa dos monstros. Por ela podem ver cousas de monstros e outros monstros.
 img: janela
 alt: umha janela
 colour: red

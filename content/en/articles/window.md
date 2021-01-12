@@ -1,6 +1,7 @@
 ---
 title: The window
 date: 2020-12-21
+description: This is the window of the monsters house. Through it they can see monsters' things and other monsters.
 img: janela
 alt: a window
 colour: red

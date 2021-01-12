@@ -1,6 +1,7 @@
 ---
 title: A rena
 date: 2020-11-23
+description: Este é um dos animais que leva o senhor que trae agasalhos.
 img: rena
 alt: umha imagem de exemplo
 colour: violet

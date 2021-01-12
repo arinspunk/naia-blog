@@ -1,6 +1,7 @@
 ---
 title: Corona virus
 date: 2020-03-20
+description: En un lugar de la Mancha, de cuyo nombre no quiero acordarme.
 img: coronavirus
 alt: un coronavirus
 colour: yellow

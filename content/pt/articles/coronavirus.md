@@ -1,6 +1,7 @@
 ---
 title: Corona virus
 date: 2020-03-20
+description: Ficara sentada à mesa a ler o Diário de Notícias.
 img: coronavirus
 alt: um coronavirus
 colour: yellow
