@@ -5,10 +5,10 @@
         <span
           v-if="this.$route.name == 'index___pt' || this.$route.name == 'index___es' || this.$route.name == 'index___en'"
         >
-          <img data-src="/logo.jpg" alt="" class="header__logo-img lazyload" />
+          <img data-src="/logo.jpg" alt="" class="header__logo-img" />
         </span>
         <NuxtLink v-else class="header__logo-link" :to="localePath('/')">
-          <img data-src="/logo.jpg" alt="" class="header__logo-img lazyload" />
+          <img data-src="/logo.jpg" alt="" class="header__logo-img" />
         </NuxtLink>
       </div>
       <ul
