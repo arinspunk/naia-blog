@@ -113,6 +113,11 @@
         @media screen and (min-width: $bp--tablet-v) {
             margin-left: 0;
         }
+        @media screen and (min-width: $bp--tablet-h) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 .page-enter-active,
