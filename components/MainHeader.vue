@@ -111,7 +111,7 @@
     &__languages {
       position: relative;
       top: -2px;
-      opacity: 0.4;
+      opacity: 0.35;
       justify-content: flex-end;
       @media screen and (min-width: $bp--tablet-h) {
         justify-content: flex-start;
