@@ -101,7 +101,7 @@
     &__img {
       max-width: 160px;
       margin: 0 0 7px 0;
-      transition: .2s ease-in .1s;
+      transition: .2s ease-in;
       @media screen and (min-width: $bp--tablet-v) {
         border-radius: 100%;
       }
