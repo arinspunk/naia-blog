@@ -1,12 +1,12 @@
 ---
-title: Corona virus
+title: Corona vírus
 date: 2020-03-20
-description: Ficara sentada à mesa a ler o Diário de Notícias.
+description: O meu di que no chão pode haver coronavírus…
 img: coronavirus
-alt: um coronavirus
+alt: um coronavírus
 colour: yellow
 transEs: coronavirus
 transEn: coronavirus
 ---
 
-Ficara sentada à mesa a ler o Diário de Notícias, no seu roupão de manhã de fazenda preta, bordado a sutache, com largos botões de madrepérola; o cabelo louro um pouco desmanchado, com um tom seco do calor do travesseiro, enrolava-se, torcido no alto da cabeça pequenina.
+O de cima é um coronavírus, dos riquinhos. O meu [aita](https://translate.google.pt/?sl=eu&tl=pt&text=aita&op=translate) di que na rua pode have-los 🦠 assim que se vai chover penso: o coronavírus vai ficar triste! 😿 

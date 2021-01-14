@@ -25,7 +25,7 @@ export default {
             messages: {
                 en: {
                     blogTitle: 'My Notebook',
-                    blogIntro: 'At home I have several notebooks in which I paint. But this one is special, it is one that anyone can see 🌍, even being far away: my grandparents, uncles, friends ... and even people I don\'t know! 😮',
+                    blogIntro: 'At home I have several notebooks in which I paint. But this one is special, it is one that anyone can see 🌍, even being far away: my grandparents, uncles, friends… and even people I don\'t know! 😮',
                     lastPages: 'Last pages',
                     next: 'Next',
                     pagesNumber: 'I have {number} painted pages',
@@ -37,7 +37,7 @@ export default {
                 },
                 es: {
                     blogTitle: 'Mi cuaderno',
-                    blogIntro: 'En casa tego varios cuadernos en los que pinto. Pero este es especial, es uno que cualquiera puede ver 🌍, incluso estando muy lejos: mis abuel@s, tí@s, amig@s… e incluso gente a la que no conozco! 😮',
+                    blogIntro: 'En casa tengo varios cuadernos en los que pinto. Pero este es especial, es uno que cualquiera puede ver 🌍, incluso estando muy lejos: mis abuel@s, tí@s, amig@s… y hasta gente que no conozco! 😮',
                     lastPages: 'Últimas páginas',
                     next: 'Siguiente',
                     pagesNumber: 'He pintado {number} páginas',
@@ -49,7 +49,7 @@ export default {
                 },
                 pt: {
                     blogTitle: 'O meu caderno',
-                    blogIntro: 'Na casa tenho vários cadernos nos quais pinto. Mas este é especial, é um que qualquer pessoa pode ver 🌍, mesmo estando longe: os meus avós, ti@s, amig@s ... e até pessoas que não conheço! 😮',
+                    blogIntro: 'Na casa tenho vários cadernos nos quais pinto. Mas este é especial, é um que qualquer pessoa pode ver 🌍, mesmo estando longe: os meus avós, ti@s, amig@s… e até pessoas que não conheço! 😮',
                     lastPages: 'Últimas páginas',
                     next: 'Seguinte',
                     pagesNumber: 'Levo {number} páginas pintadas',

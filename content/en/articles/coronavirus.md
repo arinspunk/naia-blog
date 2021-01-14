@@ -1,7 +1,7 @@
 ---
 title: Corona virus
 date: 2020-03-20
-description: Alice was beginning to get very tired of sitting by her sister on the bank.
+description:  My aita says that there may be them on the street.
 img: coronavirus
 alt: a coronavirus
 colour: yellow
@@ -9,4 +9,4 @@ transEs: coronavirus
 transPt: coronavirus
 ---
 
-Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?
+The one above is a coronavirus, from the nice ones. My [aita](https://translate.google.com/?sl=eu&tl=en&text=aita&op=translate) says that there may be them on the street 🦠 so if it's going to rain I think: the coronavirus is going to get sad! 😿

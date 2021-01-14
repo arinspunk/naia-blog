@@ -11,5 +11,5 @@ transEn: zebra-book
 
 Este es el exterior de un libro que he hecho. Es una cebra multicolor, como [el elefante](http://apegoyliteratura.es/elmer/) del cuento que me regaló mi abuela.
 
-¿Otra cosa? ¡Nunca será otra cosa!
+Y no, ¡nunca será otra cosa!
 
