@@ -49,7 +49,7 @@ export default {
                 },
                 pt: {
                     blogTitle: 'O meu caderno',
-                    blogIntro: 'Na casa tenho vários cadernos nos quais pinto. Mas este é especial, é um que qualquer pessoa pode ver 🌍, mesmo estando longe: os meus avós, ti@s, amig@s… e até pessoas que não conheço! 😮',
+                    blogIntro: 'Na casa tenho vários cadernos nos quais pinto. Mas este é especial, é um que qualquer pessoa pode ver 🌍, mesmo estando longe: os meus avós, ti@s, amig@s… e até pessoas que nom conheço! 😮',
                     lastPages: 'Últimas páginas',
                     next: 'Seguinte',
                     pagesNumber: 'Levo {number} páginas pintadas',
