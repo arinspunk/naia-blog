@@ -1,7 +1,7 @@
 <template>
   <main class="wrap">
     <div class="intro wrap__row">
-      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right orange">
+      <h1 class="intro__title wrap__col wrap__col--4 wrap__col--right">
         {{ $t("blogTitle") }}
       </h1>
       <div class="wrap__col wrap__col--4 wrap__col--right">
