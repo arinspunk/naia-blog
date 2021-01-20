@@ -10,4 +10,3 @@ transEs: orejas-sucias
 ---
 
 My friend León has sent me a drawing. In it we are both on the beach 🏖️ and our ears are dirty from so much sand! 👂🏿👂🏿
-

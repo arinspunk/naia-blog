@@ -9,5 +9,4 @@ transEs: orejas-sucias
 transEn: dirty-ears
 ---
 
-O meu amigo León enviou-me um desenho. Nele estamos os dous na praia 🏖️ e temos as orelhas sujas de tanta areia! 👂🏿👂🏿
-
+O meu amigo León enviou-me um desenho. Nele aparecemos os dous na praia 🏖️ e temos as orelhas sujas de tanta areia! 👂🏿👂🏿
