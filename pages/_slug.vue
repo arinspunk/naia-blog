@@ -11,7 +11,11 @@
       </div>
       <div class="wrap__row">
         <div class="wrap__col wrap__col--4">
-          <img class="article__img lazyload" :data-src="require(`~/assets/images/pages/${article.img}-2x.jpg`)" :alt="article.alt" />
+          <img
+            class="article__img lazyload"
+            :data-src="require(`~/assets/images/pages/${article.img}-2x.jpg`)"
+            data-sizes="auto"
+            :alt="article.alt" />
         </div>
         <div class="wrap__col wrap__col--4 wrap__col--right">
           <div class="wrap__row">

@@ -8,7 +8,11 @@
           class="next-prev__link next-prev__link--prev"
           :title="prev.title"
         >
-          <img :data-src="require(`~/assets/images/pages/${prev.img}-m-2x.jpg`)" :alt="prev.alt" class="next-prev__img lazyload" /> <img :data-src="require(`~/assets/images/arrow-left.svg`)" alt="" class="next-prev__link-arrow lazyload" /> <span class="next-prev__link-text">{{ $t('prev') }}</span>
+          <img
+            :data-src="require(`~/assets/images/pages/${prev.img}-m-2x.jpg`)"
+            :alt="prev.alt"
+            data-sizes="auto"
+            class="next-prev__img lazyload" /> <img :src="require(`~/assets/images/arrow-left.svg`)" alt="" class="next-prev__link-arrow" /> <span class="next-prev__link-text">{{ $t('prev') }}</span>
         </NuxtLink>
       </div>
       <div class="wrap__col wrap__col--2">
@@ -18,7 +22,11 @@
           class="next-prev__link next-prev__link--next"
           :title="next.title"
         >
-          <img :data-src="require(`~/assets/images/pages/${next.img}-m-2x.jpg`)" :alt="next.alt" class="next-prev__img next-prev__img--right lazyload" /> <span class="next-prev__link-text">{{ $t('next') }}</span> <img :data-src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right lazyload" />
+          <img
+            :data-src="require(`~/assets/images/pages/${next.img}-m-2x.jpg`)"
+            :alt="next.alt"
+            data-sizes="auto"
+            class="next-prev__img next-prev__img--right lazyload" /> <span class="next-prev__link-text">{{ $t('next') }}</span> <img :src="require(`~/assets/images/arrow-right.svg`)" alt="" class="next-prev__link-arrow next-prev__link-arrow--right" />
         </NuxtLink>
       </div>
     </div>

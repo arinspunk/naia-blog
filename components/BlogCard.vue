@@ -6,6 +6,7 @@
     >
       <img
         :data-src="require(`~/assets/images/pages/${article.img}-m-2x.jpg`)"
+        data-sizes="auto"
         :alt="article.alt"
         class="article__img lazyload"
       />
