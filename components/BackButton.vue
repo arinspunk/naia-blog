@@ -2,7 +2,7 @@
   <div class="back-button wrap">
     <div class="wrap__row">
       <div class="wrap__col wrap__col--4 wrap__col--right text-center">
-        <NuxtLink :to="localePath('/')" class="button">{{ $t('seeAll') }}</NuxtLink>
+        <NuxtLink :to="localePath('/')" class="button">🌈&nbsp;&nbsp;{{ $t('seeAll') }}</NuxtLink>
       </div>
     </div>
   </div>

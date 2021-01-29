@@ -34,5 +34,12 @@ export default {
       height: 70px;
     }
   }
+  @include transition-active {
+    transition: .4s ease;
+  }
+  @include transition {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }
 </style>

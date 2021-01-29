@@ -136,5 +136,12 @@
         width: calc(33.333% - #{$gutter});
       }
     }
+    @include transition-active {
+      transition: .4s ease;
+    }
+    @include transition {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
   }
 </style>
