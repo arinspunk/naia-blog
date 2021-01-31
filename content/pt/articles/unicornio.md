@@ -1,7 +1,7 @@
 ---
 title: Unicórnio na neve
 date: 2020-12-14
-description: Um unicórnio caminha na neve…
+description: O unicórnio tem fame e nom ve a erva…
 img: unicornio
 alt: un unicórnio na neve
 colour: orange
@@ -9,5 +9,8 @@ transEs: unicornio
 transEn: unicorn
 ---
 
-Um unicórnio caminha na neve, quere comer erva e atopa um coraçom verde ❄️🦄💚❄️
+O unicórnio está com fame e nom ve a erva que tem por trás do cu. Aparece um coraçom que lhe diz onde está e  o que o coraçom fai é Paz ❄️🦄💚❄️
+
+Unicórnio, és o meu tesouro. Unicórnio, quero che dar um chucho. Unicórnio, vou fazer um boneco de neve contigo ☃️
+
 
