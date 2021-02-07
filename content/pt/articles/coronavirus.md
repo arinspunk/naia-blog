@@ -1,5 +1,5 @@
 ---
-title: Corona vírus
+title: Coronavírus
 date: 2020-03-20
 description: O meu di que no chão pode haver coronavírus…
 img: coronavirus

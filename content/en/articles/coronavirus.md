@@ -1,5 +1,5 @@
 ---
-title: Corona virus
+title: Coronavirus
 date: 2020-03-20
 description:  My aita says that there may be them on the street.
 img: coronavirus
