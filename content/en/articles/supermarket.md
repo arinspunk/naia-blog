@@ -9,6 +9,6 @@ transPt: supermercado
 transEs: supermercado
 ---
 
-[Ama](https://glosbe.com/eu/en/ama), [Aita](https://glosbe.com/eu/en/aita), Erik, [León](/en/dirty-ears) and I went to the supermarket. In it there were glasses, snails, meat and sweets (one in the shape of a stork!) 👓🐌🥩🍭
+[Ama](https://glosbe.com/eu/en/ama), [aita](https://glosbe.com/eu/en/aita), Erik, [León](/en/dirty-ears) and I went to the supermarket. In it there were glasses, snails, meat and sweets (one in the shape of a stork!) 👓🐌🥩🍭
 
 We took lollipops and paid the lady at the counter. 
