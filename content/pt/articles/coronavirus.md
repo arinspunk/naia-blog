@@ -9,4 +9,4 @@ transEs: coronavirus
 transEn: coronavirus
 ---
 
-O de acima é um coronavírus, dos riquinhos. O meu [aita](https://translate.google.pt/?sl=eu&tl=pt&text=aita&op=translate) di que na rua pode-os haver 🦠 entom se vai chover penso: o coronavírus vai ficar triste! 😿 
+O de acima é um coronavírus, dos riquinhos. O meu [Aita](https://pt.glosbe.com/eu/pt/aita) di que na rua pode-os haver 🦠 entom se vai chover penso: o coronavírus vai ficar triste! 😿 

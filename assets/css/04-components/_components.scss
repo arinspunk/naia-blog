@@ -32,6 +32,8 @@
     &__title {
         margin-top: 183px;
         margin-bottom: 19px;
+        word-wrap: break-word;
+        hyphens: auto;
         @media screen and (min-width: $bp--laptop) {
             margin-top: 221px;
         }
