@@ -9,4 +9,4 @@ transPt: rena
 transEn: reindeer
 ---
 
-Este es uno de los animales del señor que trae regalos por la noche. No he pintado la nieve porque no tengo un rotulador blanco.
+Este es uno de los animales del señor que trae regalos por la noche. No he pintado la nieve porque no tengo un rotulador blanco. 🦌🎁❄️

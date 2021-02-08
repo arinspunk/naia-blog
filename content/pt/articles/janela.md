@@ -11,4 +11,4 @@ transEn: window
 
 Esta é a janela da casa dos monstros. Por ela podem enxergar cousas de monstros e outros monstros.
 
-Um deles está assustado porque está a ver umha girafa das que comem carne… e monstros! 
+Um deles está assustado porque está a ver umha girafa das que comem carne… e monstros! 👹🥩🦒

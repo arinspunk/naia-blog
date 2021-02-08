@@ -11,4 +11,4 @@ transPt: janela
 
 Esta es la ventana de la casa de los monstruos. Por ella pueden ver cosas de monstruos y otros monstruos.
 
-Uno está asustado porque está viendo una jirafa de las que comen carne… ¡y monstruos! 
+Uno está asustado porque está viendo una jirafa de las que comen carne… ¡y monstruos! 👹🥩🦒

@@ -9,7 +9,7 @@ transEs: libro-cebra
 transEn: zebra-book
 ---
 
-Esta é a parte de fora dum livro que figem. É umha zebra multicor, como [o elefante](https://contoseuconto.blogspot.com/2012/08/dica-de-livro-elmer-o-elefante-xadrez.html) do conto que me regalou a minha avoa.
+Esta é a parte de fora dum livro que figem. É umha zebra multicor 🦓, como [o elefante](https://contoseuconto.blogspot.com/2012/08/dica-de-livro-elmer-o-elefante-xadrez.html) do conto que me regalou a minha avoa.
 
 E nom, nunca vai ser outra cousa!
 
