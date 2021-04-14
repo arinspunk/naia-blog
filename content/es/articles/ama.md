@@ -15,4 +15,4 @@ La he dibujado para dársela a ella, es un regalo 🎁
 
 🙂😗😙😚😘
 
-*[ama](https://es.glosbe.com/eu/es/ama)
+*[Mamá](https://es.glosbe.com/eu/es/ama)

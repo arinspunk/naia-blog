@@ -15,4 +15,4 @@ I've draw it for her, I's a gift 🎁
 
 🙂😗😙😚😘
 
-*[ama](https://glosbe.com/eu/en/ama)
+*[Mom](https://glosbe.com/eu/en/ama)

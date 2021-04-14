@@ -15,4 +15,4 @@ Desenhei-a para agasalhar a ela, é um presente 🎁
 
 🙂😗😙😚😘
 
-*[ama](https://pt.glosbe.com/eu/pt/ama)
+*[Mamãe](https://pt.glosbe.com/eu/pt/ama)
