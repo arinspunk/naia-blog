@@ -3,7 +3,7 @@ title: Ama*
 date: 2021-03-20
 description: Um retrato da mamãe
 img: ama
-alt: o cabeça da mamãe
+alt: a cabeça da mamãe
 colour: violet
 transEs: ama
 transEn: ama
