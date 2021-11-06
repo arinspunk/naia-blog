@@ -11,7 +11,7 @@ transEn: ama
 
 Esta é a cabeça de Raquel, a minha mamãe 💜
 
-Desenhei-a para agasalhar a ela, é um presente 🎁
+Desenhei-a para agasalhar ela, é um presente 🎁
 
 🙂😗😙😚😘
 
