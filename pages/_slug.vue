@@ -13,7 +13,7 @@
         <div class="wrap__col wrap__col--4">
           <img
             class="article__img lazyload"
-            :data-src="require(`~/assets/images/pages/${article.img}-2x.jpg`)"
+            :data-src="require(`~/assets/images/pages/${article.img}-3x.jpg`)"
             data-sizes="auto"
             :alt="article.alt" />
         </div>
