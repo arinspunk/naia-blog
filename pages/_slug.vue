@@ -11,11 +11,33 @@
       </div>
       <div class="wrap__row">
         <div class="wrap__col wrap__col--4">
-          <img
-            class="article__img lazyload"
-            :data-src="require(`~/assets/images/pages/${article.img}-3x.jpg`)"
-            data-sizes="auto"
-            :alt="article.alt" />
+          <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+            <slide>
+              <img
+                class="article__img lazyload"
+                :data-src="require(`~/assets/images/pages/${article.img}-3x.jpg`)"
+                data-sizes="auto"
+                :alt="article.alt" />
+            </slide>
+            <template v-if="article.img2">
+              <slide>
+                <img
+                  class="article__img lazyload"
+                  :data-src="require(`~/assets/images/pages/${article.img2}-3x.jpg`)"
+                  data-sizes="auto"
+                  :alt="article.alt2" />
+              </slide>
+            </template>
+            <template v-if="article.img3">
+              <slide>
+                <img
+                  class="article__img lazyload"
+                  :data-src="require(`~/assets/images/pages/${article.img3}-3x.jpg`)"
+                  data-sizes="auto"
+                  :alt="article.alt3" />
+              </slide>
+            </template>
+          </carousel>
         </div>
         <div class="wrap__col wrap__col--4 wrap__col--right">
           <div class="wrap__row">
@@ -32,6 +54,8 @@
 </template>
 
 <script>
+// @source https://ssense.github.io/vue-carousel/
+import { Carousel, Slide } from 'vue-carousel';
 export default {
     layout: 'post',
     methods: {
@@ -69,6 +93,10 @@ export default {
         ],
       };
     },
+    components: {
+      Carousel,
+      Slide
+    }
 };
 </script>
 
@@ -76,11 +104,8 @@ export default {
   .article {
     &__img {
       margin-top: 30px;
-      margin-bottom: 37px;
-      border: 1px solid #f3f3f3;
       @media screen and (min-width: $bp--tablet-h) {
         margin-top: 45px;
-        margin-bottom: 50px;
       }
       @include transition-active {
         transition: .4s ease .2s;
@@ -100,6 +125,18 @@ export default {
             transform: translateX(100px);
         }
       }
+    }
+  }
+  .VueCarousel {
+    margin-bottom: 37px;
+    @media screen and (min-width: $bp--tablet-h) {
+      margin-bottom: 50px;
+    }
+    &-wrapper {
+      border: 1px solid #f3f3f3;
+    }
+    &-dot {
+      margin-top: 0;
     }
   }
 </style>
