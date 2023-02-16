@@ -11,7 +11,12 @@
       </div>
       <div class="wrap__row">
         <div class="wrap__col wrap__col--4">
-          <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+          <img
+            class="article__img lazyload"
+            :data-src="require(`~/assets/images/pages/${article.img}-3x.jpg`)"
+            data-sizes="auto"
+            :alt="article.alt" />
+          <!-- <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
             <slide>
               <img
                 class="article__img lazyload"
@@ -37,7 +42,7 @@
                   :alt="article.alt3" />
               </slide>
             </template>
-          </carousel>
+          </carousel> -->
         </div>
         <div class="wrap__col wrap__col--4 wrap__col--right">
           <div class="wrap__row">
@@ -55,7 +60,7 @@
 
 <script>
 // @source https://ssense.github.io/vue-carousel/
-import { Carousel, Slide } from 'vue-carousel';
+// import { Carousel, Slide } from 'vue-carousel';
 export default {
     layout: 'post',
     methods: {
@@ -93,10 +98,10 @@ export default {
         ],
       };
     },
-    components: {
-      Carousel,
-      Slide
-    }
+    // components: {
+    //   Carousel,
+    //   Slide
+    // }
 };
 </script>
 
