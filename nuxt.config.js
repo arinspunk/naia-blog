@@ -4,12 +4,16 @@ export default {
     components: true,
     modules: [
         '@nuxt/content',
-        'nuxt-i18n'
+        //'nuxt-i18n',
+        '@nuxtjs/i18n'
     ],
     css: [
         '@/assets/css/main.scss'
     ],
-    buildModules: ['@nuxtjs/style-resources'],
+    buildModules: [
+        '@nuxtjs/style-resources',
+        '@nuxt/postcss8'
+    ],
     styleResources: {
         scss: [
             './assets/css/00-settings/*.scss',
