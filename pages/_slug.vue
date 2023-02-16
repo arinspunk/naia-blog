@@ -109,8 +109,15 @@ export default {
   .article {
     &__img {
       margin-top: 30px;
+
+      margin-bottom: 37px;
+      border: 1px solid #f3f3f3;
+
       @media screen and (min-width: $bp--tablet-h) {
         margin-top: 45px;
+
+        margin-bottom: 50px;
+
       }
       @include transition-active {
         transition: .4s ease .2s;
