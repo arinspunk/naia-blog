@@ -51,7 +51,7 @@
 <style scoped lang="scss">
   .next-prev {
     margin-top: 113px;
-    padding: 0 #{$gutter / 2};
+    padding: 0 #{calc($gutter / 2)};
     @media screen and (min-width: $bp--tablet-h) {
       margin-top: 180px;
     }
@@ -129,14 +129,14 @@
       }
     }
     .wrap__row {
-      margin-right: -#{$gutter / 2};
+      margin-right: -#{calc($gutter / 2)};
       @media screen and (min-width: $bp--laptop) {
         margin-right: -#{$gutter};
       }
     }
     .wrap__col--2 {
-      width: calc(50% - #{$gutter / 2});
-      margin-right: $gutter / 2;
+      width: calc(50% - #{calc($gutter / 2)});
+      margin-right: calc($gutter / 2);
       @media screen and (min-width: $bp--laptop) {
         width: calc(33.333% - #{$gutter});
         margin-right: $gutter;

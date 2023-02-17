@@ -88,36 +88,36 @@ $h2-size-m-px: 40;
 $h2-size-s-px: 29.5;
 
 /* Font size rem values (needed for dynamic sizing) */
-$p-size-xl-value: $p-size-xl-px / $text-base-size;
-$p-size-l-value: $p-size-l-px / $text-base-size;
-$p-size-m-value: $p-size-m-px / $text-base-size;
-$p-size-s-value: $p-size-s-px / $text-base-size;
+$p-size-xl-value: calc($p-size-xl-px / $text-base-size);
+$p-size-l-value: calc($p-size-l-px / $text-base-size);
+$p-size-m-value: calc($p-size-m-px / $text-base-size);
+$p-size-s-value: calc($p-size-s-px / $text-base-size);
 
-$h1-size-xl-value: $h1-size-xl-px / $text-base-size;
-$h1-size-l-value: $h1-size-l-px / $text-base-size;
-$h1-size-m-value: $h1-size-m-px / $text-base-size;
-$h1-size-s-value: $h1-size-s-px / $text-base-size;
+$h1-size-xl-value: calc($h1-size-xl-px / $text-base-size);
+$h1-size-l-value: calc($h1-size-l-px / $text-base-size);
+$h1-size-m-value: calc($h1-size-m-px / $text-base-size);
+$h1-size-s-value: calc($h1-size-s-px / $text-base-size);
 
-$h2-size-xl-value: $h2-size-xl-px / $text-base-size;
-$h2-size-l-value: $h2-size-l-px / $text-base-size;
-$h2-size-m-value: $h2-size-m-px / $text-base-size;
-$h2-size-s-value: $h2-size-s-px / $text-base-size;
+$h2-size-xl-value: calc($h2-size-xl-px / $text-base-size);
+$h2-size-l-value: calc($h2-size-l-px / $text-base-size);
+$h2-size-m-value: calc($h2-size-m-px / $text-base-size);
+$h2-size-s-value: calc($h2-size-s-px / $text-base-size);
 
 /* Font sizes in rems */
-$p-size-xl: $p-size-xl-value * 1rem;
-$p-size-l: $p-size-l-value * 1rem;
-$p-size-m: $p-size-m-value * 1rem;
-$p-size-s: $p-size-s-value * 1rem;
+$p-size-xl: calc($p-size-xl-value * 1rem);
+$p-size-l: calc($p-size-l-value * 1rem);
+$p-size-m: calc($p-size-m-value * 1rem);
+$p-size-s: calc($p-size-s-value * 1rem);
 
-$h1-size-xl: $h1-size-xl-value * 1rem;
-$h1-size-l: $h1-size-l-value * 1rem;
-$h1-size-m: $h1-size-m-value * 1rem;
-$h1-size-s: $h1-size-s-value * 1rem;
+$h1-size-xl: calc($h1-size-xl-value * 1rem);
+$h1-size-l: calc($h1-size-l-value * 1rem);
+$h1-size-m: calc($h1-size-m-value * 1rem);
+$h1-size-s: calc($h1-size-s-value * 1rem);
 
-$h2-size-xl: $h2-size-xl-value * 1rem;
-$h2-size-l: $h2-size-l-value * 1rem;
-$h2-size-m: $h2-size-m-value * 1rem;
-$h2-size-s: $h2-size-s-value * 1rem;
+$h2-size-xl: calc($h2-size-xl-value * 1rem);
+$h2-size-l: calc($h2-size-l-value * 1rem);
+$h2-size-m: calc($h2-size-m-value * 1rem);
+$h2-size-s: calc($h2-size-s-value * 1rem);
 
 /* Line-height */
 $p-lh-xl-value: 40;
@@ -135,20 +135,20 @@ $h2-lh-l-value: 50;
 $h2-lh-m-value: 45;
 $h2-lh-s-value: 35;
 
-$p-lh-xl: $p-lh-xl-value / $p-size-xl-px;
-$p-lh-l: $p-lh-l-value / $p-size-l-px;
-$p-lh-m: $p-lh-m-value / $p-size-m-px;
-$p-lh-s: $p-lh-s-value / $p-size-s-px;
+$p-lh-xl: calc($p-lh-xl-value / $p-size-xl-px);
+$p-lh-l: calc($p-lh-l-value / $p-size-l-px);
+$p-lh-m: calc($p-lh-m-value / $p-size-m-px);
+$p-lh-s: calc($p-lh-s-value / $p-size-s-px);
 
-$h1-lh-xl: $h1-lh-xl-value / $h1-size-xl-px;
-$h1-lh-l: $h1-lh-l-value / $h1-size-l-px;
-$h1-lh-m: $h1-lh-m-value / $h1-size-m-px;
-$h1-lh-s: $h1-lh-s-value / $h1-size-s-px;
+$h1-lh-xl: calc($h1-lh-xl-value / $h1-size-xl-px);
+$h1-lh-l: calc($h1-lh-l-value / $h1-size-l-px);
+$h1-lh-m: calc($h1-lh-m-value / $h1-size-m-px);
+$h1-lh-s: calc($h1-lh-s-value / $h1-size-s-px);
 
-$h2-lh-xl: $h2-lh-xl-value / $h2-size-xl-px;
-$h2-lh-l: $h2-lh-l-value / $h2-size-l-px;
-$h2-lh-m: $h2-lh-m-value / $h2-size-m-px;
-$h2-lh-s: $h2-lh-s-value / $h2-size-s-px;
+$h2-lh-xl: calc($h2-lh-xl-value / $h2-size-xl-px);
+$h2-lh-l: calc($h2-lh-l-value / $h2-size-l-px);
+$h2-lh-m: calc($h2-lh-m-value / $h2-size-m-px);
+$h2-lh-s: calc($h2-lh-s-value / $h2-size-s-px);
 
 /* Custom props for modern browsers */
 :root {

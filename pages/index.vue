@@ -70,14 +70,14 @@
       }
     }
     .wrap__row {
-      margin-right: -#{$gutter / 2};
+      margin-right: -#{calc($gutter / 2)};
       @media screen and (min-width: $bp--tablet-h) {
         margin-right: -#{$gutter};
       }
     }
     .wrap__col--2 {
-      width: calc(50% - #{$gutter / 2});
-      margin-right: $gutter / 2;
+      width: calc(50% - #{calc($gutter / 2)});
+      margin-right: calc($gutter / 2);
       &:first-child {
         width: 100%;
         @media screen and (min-width: $bp--tablet-h) {
@@ -90,7 +90,7 @@
       }
     }
     .wrap__col--6 {
-      margin-right: $gutter / 2;
+      margin-right: calc($gutter / 2);
       @media screen and (min-width: $bp--tablet-h) {
         margin-right: $gutter;
       }
