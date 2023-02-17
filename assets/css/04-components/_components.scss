@@ -30,7 +30,7 @@
 }
 .intro {
     &__title {
-        margin-top: 183px;
+        margin-top: 123px;
         margin-bottom: 19px;
         word-wrap: break-word;
         hyphens: auto;
@@ -86,7 +86,7 @@
     }
     &__text {
         margin-top: 0;
-        margin-bottom: 53px;
+        margin-bottom: 33px;
         @media screen and (min-width: $bp--laptop) {
             margin-bottom: 120px;
         }

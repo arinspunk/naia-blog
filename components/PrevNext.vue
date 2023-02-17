@@ -50,7 +50,7 @@
 
 <style scoped lang="scss">
   .next-prev {
-    margin-top: 113px;
+    margin-top: 93px;
     padding: 0 #{calc($gutter / 2)};
     @media screen and (min-width: $bp--tablet-h) {
       margin-top: 180px;

@@ -1,7 +1,7 @@
 <template>
   <footer class="footer wrap">
     <div class="footer__wrap wrap__row">
-      <div class="wrap__col wrap__col--6">© <a class="" to="https://twitter.com/naia_ze" target="_blank" rel="noopener" title="Twitter">NZ&A</a> {{ year }}</div>
+      <div class="wrap__col wrap__col--6">© <a class="" href="https://twitter.com/naia_ze" target="_blank" rel="noopener" title="Twitter">NZ&A</a> {{ year }}</div>
     </div>
   </footer>
 </template>

@@ -13,7 +13,7 @@
 
 <style scoped lang="scss">
 .back-button {
-  margin-top: 83px;
+  margin-top: 63px;
   @media screen and (min-width: $bp--tablet-h) {
     margin-top: 103px;
   }
