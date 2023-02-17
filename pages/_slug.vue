@@ -93,6 +93,7 @@ export default {
           { name: "description", property: "og:description", content: this.article.description, hid: "description" },
           { property: "og:title", content: this.article.title + ' – ' + this.$t('blogTitle') },
           { property: "og:image", content: require(`~/assets/images/pages/${this.article.img}-m-2x.jpg`) },
+          { property: "og:image", content: require(`~/assets/images/pages/${this.article.img}-m-1x.jpg`) },
           { name: "twitter:description", content: this.article.description },
           { name: "twitter:image", content: require(`~/assets/images/pages/${this.article.img}-2x.jpg`) }
         ],
