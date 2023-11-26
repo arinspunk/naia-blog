@@ -3,7 +3,9 @@ title: Robô
 date: 2022-06-17
 description: Maria, o meu robô 
 img: robo
+# img2: robo
 alt: um robô de madeira
+# alt2: um robô de madeira
 colour: green
 transEs: robot
 transEn: robot

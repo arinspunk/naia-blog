@@ -4,7 +4,6 @@ export default {
     components: true,
     modules: [
         '@nuxt/content',
-        //'nuxt-i18n',
         '@nuxtjs/i18n'
     ],
     css: [
@@ -100,7 +99,8 @@ export default {
         ]
     },
     plugins: [
-        '~/plugins/lazysizes.client.js'
+        '~/plugins/lazysizes.client.js',
+        '~/plugins/vue-agile'
     ],
     build: {
         extend (config, { isDev, isClient, loaders: { vue } }) {
@@ -108,6 +108,7 @@ export default {
             vue.transformAssetUrls.img = ['data-src', 'src']
             vue.transformAssetUrls.source = ['data-srcset', 'srcset']
             }
-        }
+        },
+        transpile: ['vue-agile']
     },
 }
