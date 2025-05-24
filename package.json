@@ -4,6 +4,7 @@
     "dev": "NODE_OPTIONS='--openssl-legacy-provider' node_modules/nuxt/bin/nuxt.js",
     "build": "NODE_OPTIONS='--openssl-legacy-provider' node_modules/nuxt/bin/nuxt.js build",
     "generate": "NODE_OPTIONS='--openssl-legacy-provider' node_modules/nuxt/bin/nuxt.js generate",
+    "generate:netlify": "node_modules/nuxt/bin/nuxt.js generate",
     "start": "NODE_OPTIONS='--openssl-legacy-provider' node_modules/nuxt/bin/nuxt.js start"
   },
   "dependencies": {
