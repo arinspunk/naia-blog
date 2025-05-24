@@ -1,7 +1,7 @@
 ---
 title: Família 🍬 lambetada
 date: 2025-05-24
-description: Esta riquinha família som uns auto-colantes que fizemos eu e Erik
+description: Esta riquinha família som uns auto-colantes que figemos eu e Erik
 img: familia-lambetada
 alt: coletânea de auto-colantes da família lambetada
 colour: pink
