@@ -1,5 +1,5 @@
 ---
-title: Gummy Family
+title: Gummy Family 🍬 
 date: 2025-05-24
 description: This cute family are stickers that Erik and I made
 img: familia-lambetada
@@ -9,7 +9,7 @@ transPt: familia-lambetada
 transEs: familia-gominola
 ---
 
-NAIA: I and [Erik](/en/erik) made a gummy family. Each one is different and has its own emotion 😊😢😡.
+NAIA: I and [Erik](/en/erik) made a gummy family 🍭. Each one is different and has its own emotion 😊😢😡.
 
 ERIK: Mine are three. A baby 👶, one that's sick because it has cavities 🦷, and one that's sad because it has a blue face 💙.
 

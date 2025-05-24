@@ -1,7 +1,7 @@
 ---
-title: Familia gominola 🍬
+title: Familia 🍬 gominola
 date: 2025-05-24
-description: Esta familia tan maja son unas pegatinas que hemos hecho eu e Erik 🎨
+description: Esta familia tan maja son unas pegatinas que hemos hecho eu e Erik
 img: familia-lambetada
 alt: colección de de pegatinas de la familia gominola
 colour: pink

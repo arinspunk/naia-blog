@@ -1,5 +1,5 @@
 ---
-title: Família lambetada
+title: Família 🍬 lambetada
 date: 2025-05-24
 description: Esta riquinha família são uns auto-collantes que fizemos eu e Erik
 img: familia-lambetada
@@ -9,7 +9,7 @@ transEs: familia-gominola
 transEn: gummy-family
 ---
 
-NAIA: eu e [Erik](/es/erik) figemos umha família lambetada. Cada um é diferente e tem a sua emoçom 😊😢😡.
+NAIA: eu e [Erik](/es/erik) figemos umha família lambetada 🍭. Cada um é diferente e tem a sua emoçom 😊😢😡.
 
 ERIK: os meus som três. Um bebê 👶, um que está doentinho porque tem cáries 🦷 e um triste porque tem a faciana azul 💙.
 
