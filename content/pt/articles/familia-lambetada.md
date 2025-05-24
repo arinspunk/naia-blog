@@ -15,4 +15,4 @@ ERIK: os meus som três. Um bebê 👶, um que está doentinho porque tem cárie
 
 XÚLIO: mas nom me contastes o mais importante…
 
-NAIA/ERIK: que som auto-colantes!
+NAIA: que som auto-colantes!
