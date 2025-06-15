@@ -1,5 +1,5 @@
 ---
-title: Libro mariposa 🦋
+title: Libro 🦋 mariposa
 date: 2025-06-15
 description: Un libro mariposa que explica las mariposas
 img: livro-bolboreta
@@ -9,4 +9,8 @@ transPt: livro-bolboreta
 transEn: butterfly-book
 ---
 
-ERIK: Este es un libro mariposa que explica las mariposas. Huevo 🥚, gusano 🐛, depués duerme 😴 y mariposa 🦋
+ERIK: Este es un libro mariposa que explica las mariposas. Huevo 🥚, gusano 🪱, depués duerme 😴 y mariposa 🦋.
+
+PAPÁ: no es gusano, es oruga.
+
+ERIK: ¡ah! vale, oruga 🐛.
