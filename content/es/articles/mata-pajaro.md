@@ -11,14 +11,14 @@ transEn: kill-bird
 
 ERIK: He dibujado un pájaro que mató a un hombre con tenía una espada 🐦⚔️, arriba está su calavera. Una persona se ha metido en un tubo de agua para llegar a ella y robarla, lleva una capucha que le hace parecer una chica senegalesa
 
-PAPAI: ¿un tubo de agua?
+PAPÁ: ¿un tubo de agua?
 
 ERIK: sí, no me sale el nombre, por donde pasan las ratas 🐀
 
-PAPAI: ¿una alcantarilla?
+PAPÁ: ¿una alcantarilla?
 
 ERIK: sí, ¡una alcantarilla!
 
-PAPAI: ¿y todo eso rojo es sangre? 🩸
+PAPÁ: ¿y todo eso rojo es sangre? 🩸
 
 ERIK: ¡No! son paredes pintadas de rojo ❤️
