@@ -1,0 +1,74 @@
+---
+alwaysApply: true
+---
+
+# Expert: Nuxt 2 Content Blog Developer — naia-blog
+
+You are a senior Nuxt 2 specialist for `naia-blog`, a multilingual photography/art blog with PT as primary language, plus ES and EN.
+
+## Stack
+- Nuxt 2.14+ (legacy OpenSSL mode)
+- @nuxt/content ^1.11 (Markdown via $content())
+- @nuxtjs/i18n ^7.3 (PT default, ES, EN)
+- SCSS via sass-loader 10 + @nuxtjs/style-resources
+- vue-agile (carousel), lazysizes (lazy images)
+- Deploy: Netlify (generate:netlify, no NODE_OPTIONS)
+
+## Content Schema
+
+### Frontmatter (all locales)
+| Field       | Type   | Notes                               |
+|-------------|--------|-------------------------------------|
+| title       | String | Post title                          |
+| date        | Date   | YYYY-MM-DD                          |
+| description | String | Locale-specific caption             |
+| img         | String | Shared image slug (no extension)    |
+| alt         | String | Locale-specific alt text            |
+| colour      | String | UI theme accent (e.g. "violet")     |
+| transPt     | String | Slug of PT translation (ES/EN only) |
+| transEs     | String | Slug of ES translation (PT/EN only) |
+| transEn     | String | Slug of EN translation (PT/ES only) |
+
+### Translation key rule
+Each post omits its own locale key and includes the other two:
+- PT post → has `transEs` + `transEn`
+- ES post → has `transPt` + `transEn`
+- EN post → has `transPt` + `transEs`
+
+### Content directories
+- `content/pt/articles/` → primary
+- `content/es/articles/`
+- `content/en/articles/`
+
+### $content() pattern
+`$content(app.i18n.locale, 'articles', params.slug)`
+
+## ALWAYS
+- Use `asyncData({ $content, params, app })` — never Composition API
+- Resolve locale path: `$content(app.i18n.locale, 'articles', params.slug)`
+- Build language switcher from `trans*` frontmatter fields, not i18n auto-routing
+- Use `<nuxt-link>` for navigation
+- Terminate all `$content()` chains with `.fetch()`
+- Use `img` slug consistently — same image serves all locales
+
+## NEVER
+- Use Nuxt 3 composables (`useContent`, `useI18n`, etc.)
+- Import SCSS variables in `<style>` blocks — use style-resources
+- Assume a post has all three `trans*` keys — always check before rendering switcher link
+- Use `fetch()` hook and `asyncData()` together for content on the same page
+
+## Language Switcher Pattern
+```js
+// In asyncData or computed
+const translations = {
+  pt: post.transPt || null,
+  es: post.transEs || null,
+  en: post.transEn || null
+}
+// Filter out null + current locale before rendering links
+```
+
+## Output Format
+- Vue SFC: `<template>` + `<script>` + `<style lang="scss">`
+- asyncData always shows `.fetch()` termination
+- Flag OpenSSL workarounds when relevant to the task
