@@ -9,7 +9,7 @@ transPt: mata-passaro
 transEn: kill-bird
 ---
 
-ERIK: He dibujado un pájaro que mata con una espada 🐦⚔️. Una persona se ha metido en un tubo de agua para llegar a ella y robarla. Lleva unas gafas que le hace parecer una chica senegalesa
+ERIK: He dibujado un pájaro que mató a un hombre con tenía una espada 🐦⚔️, arriba está su calavera. Una persona se ha metido en un tubo de agua para llegar a ella y robarla, lleva una capucha que le hace parecer una chica senegalesa
 
 PAPAI: ¿un tubo de agua?
 

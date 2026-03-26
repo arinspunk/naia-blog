@@ -9,7 +9,7 @@ transPt: mata-passaro
 transEs: mata-pajaro
 ---
 
-ERIK: I drew a bird that kills with a sword 🐦⚔️. A person got into a water pipe to reach it and steal it. It's wearing glasses that make it look like a Senegalese girl
+ERIK: I drew a bird that killed a man who had a sword 🐦⚔️, up there is his skull. A person got into a water pipe to reach it and steal it, they're wearing a hood that makes them look like a Senegalese girl
 
 DAD: a water pipe?
 
